@@ -1,8 +1,8 @@
 
 ---
 
-<details open>
-<summary># 🎛️ Music Sound-Design</summary>
+<details>
+<summary>🎛️ Music Sound-Design</summary>
 
 ## 🥁 Drum Synthesis
 
@@ -19,7 +19,7 @@
 
 
 
-##### Kick
+#### Kick
 
 ##### Common
 - [Тот самый Kick клик](https://boosty.to/mrfrenkie/posts/f351797e-5c14-4f10-bf29-b005f8b0145f)
@@ -41,7 +41,7 @@
 - [Синтез Kick для Drum And Bass](https://boosty.to/mrfrenkie/posts/f1a935f0-2b60-4aab-8a77-7f3f486cc096)
 
 
-##### Snare
+#### Snare
 
 - [Художественный фильм - Snare + файлы](https://boosty.to/mrfrenkie/posts/8eab4d6e-14d1-4e01-b5eb-f4ab5984d65d) ([YouTube](https://www.youtube.com/watch?v=IVLtIJ5O1x8&ab_channel=Mr.Frenkie))
 - [Пробивной и громкий snare + пресет](https://boosty.to/mrfrenkie/posts/ba947711-c463-483f-92d9-0b96def7aba7)
@@ -49,7 +49,7 @@
 - [Маленькие снееры](https://boosty.to/mrfrenkie/posts/9f7942d1-3a87-4b39-8169-c6c2f40d651f)
 
 
-##### Cymbals
+#### Cymbals
 
 - [Железо для днб. Из белого шума](https://boosty.to/mrfrenkie/posts/6282a549-f433-4893-99b4-d0b7eeba81b4) ([YouTube](https://youtu.be/dfIJgi72JIw?si=gw1hunEY6go0vHrF))
 
@@ -60,18 +60,18 @@
 
 
 
-##### Sub
+#### Sub
 
 - [Стрим: Почему бас - не Сабит](https://boosty.to/mrfrenkie/posts/745a0149-876a-4b04-9a74-d99e71a3e377)
 
 
-##### Saw Bass
+#### Saw Bass
 
 - [Фирмовый бас из пилы](https://boosty.to/mrfrenkie/posts/2a30f2e5-07fc-4d09-9c0f-932a3df842de)
 - [Субтрактивный синтез всё ещё могёт](https://boosty.to/mrfrenkie/posts/0a2a4119-3440-4b12-849d-d305cd122e8f?share=post_link)
 
 
-##### "С чего начинается Bass" Series
+#### "С чего начинается Bass" Series
 
 - [С чего начинается Bass (часть 1)](https://boosty.to/mrfrenkie/posts/cc34c05a-2399-4fcd-8dcd-4d18621306b8)
 - [С чего начинается Bass (часть 2)](https://boosty.to/mrfrenkie/posts/d84f2322-c371-45c3-a759-4a898c833bbb)
@@ -81,7 +81,7 @@
 - [С чего начинается Bass (ч. 5) ACID](https://boosty.to/mrfrenkie/posts/719ad41e-4c2b-4b1a-88d1-1d3766a75d54)
 
 
-##### "Just Bass" Series
+#### "Just Bass" Series
 
 - [Mr. Frenkie - Just Bass #1 Tutorial - YouTube](https://youtu.be/_4IymODIwBY?si=mcvsaFmX_W5VMfsK)
 - [Mr. Frenkie - Just Bass #2. Serum Dubstep Growl - YouTube](https://youtu.be/P6-bTW0d46I?si=HBE92MUZZ-1ZeK6c)
@@ -139,8 +139,8 @@
 
 </details>
 
-<details open>
-<summary># 🎶 Arrangement and Genre-Specific Sound-Design</summary>
+<details>
+<summary>🎶 Arrangement and Genre-Specific Sound-Design</summary>
 
 ## 🛠️ Common
 
@@ -328,8 +328,8 @@
 
 </details>
 
-<details open>
-<summary># 🎚️ Mixing and Mastering</summary>
+<details>
+<summary>🎚️ Mixing and Mastering</summary>
 
 ## 🧰 Utilities
 
@@ -364,13 +364,13 @@
 
 
 
-##### Лёли
+#### Лёли
 
 - [Сведение моего трека "Лёли". Drums](https://boosty.to/mrfrenkie/posts/af85cd5a-833e-46a6-b32e-9d730562e033)
 - [Сведение моего трека "Лёли". Drums+Bass](https://boosty.to/mrfrenkie/posts/802df732-f4d9-46a1-b675-6aa4229b0a02)
 
 
-##### Subscribers
+#### Subscribers
 
 - [Свожу демку подписчика. Замена ударки, грув, мастеринг -3LUFS](https://boosty.to/mrfrenkie/posts/f6be6046-75b4-4fcd-8747-de6540383ebe)
 
@@ -407,8 +407,8 @@
 
 </details>
 
-<details open>
-<summary># ❓ Tips and Tricks / Q&A</summary>
+<details>
+<summary>❓ Tips and Tricks / Q&A</summary>
 
 
 #### Little bit of everything
@@ -427,8 +427,8 @@
 
 </details>
 
-<details open>
-<summary># 🖥️ Software</summary>
+<details>
+<summary>🖥️ Software</summary>
 
 
 ## 💻 DAW
@@ -455,7 +455,7 @@
 
 
 
-##### Common
+#### Common
 
 - [Mr. Frenkie - Обзор Bitwig 1.1/Bitwig Studio 1.1 Review - YouTube](https://youtu.be/utI8Y16_1g4?si=z-B0cociLZPvANv_)
 - [Mr. Frenkie: Bitwig Studio - индивидуальный pitch и модуляция нот - YouTube](https://youtu.be/4675ZK-xmwQ?si=I6ya_9cfKIFDFQxd)
@@ -471,7 +471,7 @@
 - [Кручу Bitwig Studio 5 Beta - YouTube](https://www.youtube.com/live/BZGSmLqdsAc?si=Ui3y0vLRSlItfME3)
 
 
-##### Grid
+#### Grid
 
 - [Bitwig Studio 3.0 Знакомство с Grid - YouTube](https://www.youtube.com/live/8m7aMWQvzes?si=nWRi5VcaIC0sSf9J)
 - [Крутим Bitwig Poly Grid #1 - YouTube](https://www.youtube.com/live/84LoAnXgcso?si=Vkshyp8GQrhXff_9)
