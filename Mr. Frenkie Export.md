@@ -68,6 +68,7 @@
 > > >
 > > >
 > </details>
+
 > ## 🎸 Bass Synthesis
 >
 > <details>
@@ -110,6 +111,7 @@
 > > >
 > > >
 > </details>
+
 > ## 🎶 Not Bass Synthesis
 >
 > <details>
@@ -131,6 +133,7 @@
 > >
 > >
 > </details>
+
 > ## ⚙️ Synth Techniques 
 >
 > <details>
@@ -174,7 +177,9 @@
 > >
 > >
 > </details>
+
 </details>
+
 # 🎶 Arrangement and Genre-Specific Sound-Design
 
 <details>
@@ -200,6 +205,7 @@
 > >
 > >
 > </details>
+
 > ## 🎼 Music Theory
 >
 > <details>
@@ -210,6 +216,7 @@
 > >
 > >
 > </details>
+
 > ## 🎵 Genres
 >
 > <details>
@@ -342,6 +349,7 @@
 > >
 > >
 > </details>
+
 > ## 🎧 Subscribers Music
 >
 > <details>
@@ -380,6 +388,7 @@
 > >
 > >
 > </details>
+
 > ## 🎧 Frenkie Music
 >
 > <details>
@@ -392,6 +401,7 @@
 > >
 > >
 > </details>
+
 > ## 🎧 Reference Music
 >
 > <details>
@@ -414,7 +424,9 @@
 > >
 > >
 > </details>
+
 </details>
+
 # 🎚️ Mixing and Mastering
 
 <details>
@@ -437,6 +449,7 @@
 > >
 > >
 > </details>
+
 > ## 🎚️ Mix
 >
 > <details>
@@ -478,6 +491,7 @@
 > > >
 > > >
 > </details>
+
 > ## 🔊 Master
 >
 > <details>
@@ -515,7 +529,9 @@
 > >
 > >
 > </details>
+
 </details>
+
 # ❓ Tips and Tricks / Q&A
 
 <details>
@@ -537,6 +553,7 @@
 
 
 </details>
+
 # 🖥️ Software
 
 <details>
@@ -603,6 +620,7 @@
 > > >
 > > >
 > </details>
+
 > ## 🔌 Plugins Review
 >
 > <details>
@@ -619,4 +637,5 @@
 > >
 > >
 > </details>
+
 </details>
