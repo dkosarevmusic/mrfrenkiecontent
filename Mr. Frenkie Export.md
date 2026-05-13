@@ -4,8 +4,6 @@
 <details>
 <summary>🎛️ Music Sound-Design</summary>
 
-</details>
-
 <details>
 <summary>🥁 Drum Synthesis</summary>
 
@@ -154,11 +152,9 @@
 
 
 </details>
-
+</details>
 <details>
 <summary>🎶 Arrangement and Genre-Specific Sound-Design</summary>
-
-</details>
 
 <details>
 <summary>🛠️ Common</summary>
@@ -367,11 +363,9 @@
 
 
 </details>
-
+</details>
 <details>
 <summary>🎚️ Mixing and Mastering</summary>
-
-</details>
 
 <details>
 <summary>🧰 Utilities</summary>
@@ -458,7 +452,7 @@
 
 
 </details>
-
+</details>
 <details>
 <summary>❓ Tips and Tricks / Q&A</summary>
 
@@ -478,12 +472,9 @@
 
 
 </details>
-
 <details>
 <summary>🖥️ Software</summary>
 
-
-</details>
 
 <details>
 <summary>💻 DAW</summary>
@@ -553,4 +544,5 @@
 - [Ещё о Serum 2 - YouTube](https://youtu.be/BEAqy7xLwBM?si=b7fppc505Y3VwqZw)
 
 
+</details>
 </details>
