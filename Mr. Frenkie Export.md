@@ -1,9 +1,33 @@
+## Table of Contents
+[🎛️ Music Sound-Design](#music-sound-design)
+- [🥁 Drum Synthesis](#drum-synthesis)
+- [🎸 Bass Synthesis](#bass-synthesis)
+- [🎶 Not Bass Synthesis](#not-bass-synthesis)
+- [⚙️ Synth Techniques](#synth-techniques)
+
+[🎶 Arrangement and Genre-Specific Sound-Design](#arrangement-and-genre-specific-sound-design)
+- [🛠️ Common](#common)
+- [🎼 Music Theory](#music-theory)
+- [🎵 Genres](#genres)
+- [🎧 Subscribers Music](#subscribers-music)
+- [🎧 Frenkie Music](#frenkie-music)
+- [🎧 Reference Music](#reference-music)
+
+[🎚️ Mixing and Mastering](#mixing-and-mastering)
+- [🧰 Utilities](#utilities)
+- [🎚️ Mix](#mix)
+- [🔊 Master](#master)
+
+[❓ Tips and Tricks / Q&A](#tips-and-tricks-qa)
+
+[🖥️ Software](#software)
+- [💻 DAW](#daw)
+- [🔌 Plugins Review](#plugins-review)
+
 
 ---
 
-<details open>
-<summary># 🎛️ Music Sound-Design</summary>
-
+# 🎛️ Music Sound-Design
 ## 🥁 Drum Synthesis
 
 ### Presets
@@ -130,11 +154,7 @@
 > 
 > - [Физическое моделирование как тип синтеза](https://boosty.to/mrfrenkie/posts/fb7bbd02-80f8-458b-88c8-f0c703752cf6)
 
-</details>
-
-<details open>
-<summary># 🎶 Arrangement and Genre-Specific Sound-Design</summary>
-
+# 🎶 Arrangement and Genre-Specific Sound-Design
 ## 🛠️ Common
 
 #### Drums
@@ -319,11 +339,7 @@
 > [!IMPORTANT]
 > - [Слушаю вашу любимую музыку](https://boosty.to/mrfrenkie/posts/72afc195-28d4-487f-bc73-acfc1fa60a2d)
 
-</details>
-
-<details open>
-<summary># 🎚️ Mixing and Mastering</summary>
-
+# 🎚️ Mixing and Mastering
 ## 🧰 Utilities
 
 ### Presets
@@ -396,11 +412,7 @@
 > - [Нижняя середина и громкость трека. И параша.](https://boosty.to/mrfrenkie/posts/e50dc0c5-a067-4901-a9ca-8e58caa2c680)
 > - [Почему треки звучат несведёнными. Про лоумид опять.](https://boosty.to/mrfrenkie/posts/c92e68ec-6a16-46e9-96d4-7b8e3130b855)
 
-</details>
-
-<details open>
-<summary># ❓ Tips and Tricks / Q&A</summary>
-
+# ❓ Tips and Tricks / Q&A
 
 #### Little bit of everything
 > [!IMPORTANT]
@@ -416,11 +428,7 @@
 > - [Обо всём понемногу ч.6](https://boosty.to/mrfrenkie/posts/0acbda39-e7db-459a-a6c3-6a6ad4177821)
 > - 🆕[Обо всём понемногу ч.7](https://boosty.to/mrfrenkie/posts/7d1b6494-1244-4b68-9176-4a133b3abebf)
 
-</details>
-
-<details open>
-<summary># 🖥️ Software</summary>
-
+# 🖥️ Software
 
 ## 💻 DAW
 
@@ -480,5 +488,3 @@
 > - [Обсуждаем новости. Studio One 6, Synplant, Current - YouTube](https://www.youtube.com/live/vJmADEhcxPk?si=YF2zp4J1pZHAeGlf)
 > - [Xfer Serum 2. Всё, что нужно знать - YouTube](https://www.youtube.com/live/A1HcE1wtAG8?si=lW25tacp1B9SfF06)
 > - [Ещё о Serum 2 - YouTube](https://youtu.be/BEAqy7xLwBM?si=b7fppc505Y3VwqZw)
-
-</details>
