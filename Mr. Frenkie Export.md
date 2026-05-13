@@ -43,7 +43,8 @@
 > [!NOTE]
 > 
 > 
-> > [!example] Kick
+##### Kick
+> >  [!IMPORTANT]
 > > 
 > > ##### Common
 > > - [Тот самый Kick клик](https://boosty.to/mrfrenkie/posts/f351797e-5c14-4f10-bf29-b005f8b0145f)
@@ -64,14 +65,16 @@
 > > ##### Drum and Bass
 > > - [Синтез Kick для Drum And Bass](https://boosty.to/mrfrenkie/posts/f1a935f0-2b60-4aab-8a77-7f3f486cc096)
 > 
-> > [!example] Snare
+##### Snare
+> >  [!IMPORTANT]
 > > 
 > > - [Художественный фильм - Snare + файлы](https://boosty.to/mrfrenkie/posts/8eab4d6e-14d1-4e01-b5eb-f4ab5984d65d) ([YouTube](https://www.youtube.com/watch?v=IVLtIJ5O1x8&ab_channel=Mr.Frenkie))
 > > - [Пробивной и громкий snare + пресет](https://boosty.to/mrfrenkie/posts/ba947711-c463-483f-92d9-0b96def7aba7)
 > > - [Снеер дистортион + пресет (заметка)](https://boosty.to/mrfrenkie/posts/836acb6a-314f-4131-8fba-f562161c4ec3)
 > > - [Маленькие снееры](https://boosty.to/mrfrenkie/posts/9f7942d1-3a87-4b39-8169-c6c2f40d651f)
 > 
-> > [!example] Cymbals
+##### Cymbals
+> >  [!IMPORTANT]
 > > 
 > > - [Железо для днб. Из белого шума](https://boosty.to/mrfrenkie/posts/6282a549-f433-4893-99b4-d0b7eeba81b4) ([YouTube](https://youtu.be/dfIJgi72JIw?si=gw1hunEY6go0vHrF))
 
@@ -81,16 +84,19 @@
 > [!NOTE]
 > 
 > 
-> > [!example] Sub
+##### Sub
+> >  [!IMPORTANT]
 > > 
 > > - [Стрим: Почему бас - не Сабит](https://boosty.to/mrfrenkie/posts/745a0149-876a-4b04-9a74-d99e71a3e377)
 > 
-> > [!example] Saw Bass
+##### Saw Bass
+> >  [!IMPORTANT]
 > > 
 > > - [Фирмовый бас из пилы](https://boosty.to/mrfrenkie/posts/2a30f2e5-07fc-4d09-9c0f-932a3df842de)
 > > - [Субтрактивный синтез всё ещё могёт](https://boosty.to/mrfrenkie/posts/0a2a4119-3440-4b12-849d-d305cd122e8f?share=post_link)
 > 
-> > [!example] "С чего начинается Bass" Series
+##### "С чего начинается Bass" Series
+> >  [!IMPORTANT]
 > > 
 > > - [С чего начинается Bass (часть 1)](https://boosty.to/mrfrenkie/posts/cc34c05a-2399-4fcd-8dcd-4d18621306b8)
 > > - [С чего начинается Bass (часть 2)](https://boosty.to/mrfrenkie/posts/d84f2322-c371-45c3-a759-4a898c833bbb)
@@ -99,7 +105,8 @@
 > > - [С чего начинается Bass (часть 4.5) Brass/Filter FM](https://boosty.to/mrfrenkie/posts/9f14377e-8089-48a3-b6f8-97c3f4c37efc)
 > > - [С чего начинается Bass (ч. 5) ACID](https://boosty.to/mrfrenkie/posts/719ad41e-4c2b-4b1a-88d1-1d3766a75d54)
 > 
-> > [!example] "Just Bass" Series
+##### "Just Bass" Series
+> >  [!IMPORTANT]
 > > 
 > > - [Mr. Frenkie - Just Bass #1 Tutorial - YouTube](https://youtu.be/_4IymODIwBY?si=mcvsaFmX_W5VMfsK)
 > > - [Mr. Frenkie - Just Bass #2. Serum Dubstep Growl - YouTube](https://youtu.be/P6-bTW0d46I?si=HBE92MUZZ-1ZeK6c)
@@ -373,12 +380,14 @@
 > [!NOTE]
 > 
 > 
-> > [!example] Лёли
+##### Лёли
+> >  [!IMPORTANT]
 > > 
 > > - [Сведение моего трека "Лёли". Drums](https://boosty.to/mrfrenkie/posts/af85cd5a-833e-46a6-b32e-9d730562e033)
 > > - [Сведение моего трека "Лёли". Drums+Bass](https://boosty.to/mrfrenkie/posts/802df732-f4d9-46a1-b675-6aa4229b0a02)
 > 
-> > [!example] Subscribers
+##### Subscribers
+> >  [!IMPORTANT]
 > > 
 > > - [Свожу демку подписчика. Замена ударки, грув, мастеринг -3LUFS](https://boosty.to/mrfrenkie/posts/f6be6046-75b4-4fcd-8747-de6540383ebe)
 > 
@@ -439,7 +448,8 @@
 > - [Общаемся пока я улучшаю скрипт для рипер в AI](https://boosty.to/mrfrenkie/posts/6edd6018-18dc-4e07-98da-b9bacb76c19c)
 > - [У мужа СЛЕТЕЛИ ТАПКИ, когда он увидел, что умеет этот PIANO ROLL - YouTube](https://www.youtube.com/watch?v=BZEWbNUnIZw)
 >
-> > [!info] Scripts
+#### Scripts
+> >  [!NOTE]
 > > - [REAPER+ - Обновляемый пост со скриптами](https://boosty.to/mrfrenkie/posts/818c0e72-88e7-453c-8705-3a3d7039257d)
 > > - [REAPER. Мой скрипт Item Properties](https://boosty.to/mrfrenkie/posts/482fcafe-2ffe-41fa-8add-c22fdf15532c)
 > > - [REAPER+ - Универсальные извлекаторы аккордов](https://boosty.to/mrfrenkie/posts/a6082067-353b-414d-b6b4-253bee44b188?share=post_link)
@@ -453,7 +463,8 @@
 > [!NOTE]
 > 
 > 
-> > [!example] Common
+##### Common
+> >  [!IMPORTANT]
 > > 
 > > - [Mr. Frenkie - Обзор Bitwig 1.1/Bitwig Studio 1.1 Review - YouTube](https://youtu.be/utI8Y16_1g4?si=z-B0cociLZPvANv_)
 > > - [Mr. Frenkie: Bitwig Studio - индивидуальный pitch и модуляция нот - YouTube](https://youtu.be/4675ZK-xmwQ?si=I6ya_9cfKIFDFQxd)
@@ -468,7 +479,8 @@
 > > - [BITWIG STUDIO 3.2 Beta 3 - YouTube](https://www.youtube.com/live/etM2bp_m2l4?si=xh9LG417XsAcopYL)
 > > - [Кручу Bitwig Studio 5 Beta - YouTube](https://www.youtube.com/live/BZGSmLqdsAc?si=Ui3y0vLRSlItfME3)
 > 
-> > [!example] Grid
+##### Grid
+> >  [!IMPORTANT]
 > > 
 > > - [Bitwig Studio 3.0 Знакомство с Grid - YouTube](https://www.youtube.com/live/8m7aMWQvzes?si=nWRi5VcaIC0sSf9J)
 > > - [Крутим Bitwig Poly Grid #1 - YouTube](https://www.youtube.com/live/84LoAnXgcso?si=Vkshyp8GQrhXff_9)
