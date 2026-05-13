@@ -469,8 +469,8 @@
 > > > - [Обо всём понемногу ч.5](https://boosty.to/mrfrenkie/posts/8b59cfc0-4101-418d-8516-493654e533e2)
 > > > - [Обо всём понемногу ч.6](https://boosty.to/mrfrenkie/posts/0acbda39-e7db-459a-a6c3-6a6ad4177821)
 > > > - 🆕[Обо всём понемногу ч.7](https://boosty.to/mrfrenkie/posts/7d1b6494-1244-4b68-9176-4a133b3abebf)
-
-
+>
+>
 </details>
 <details>
 <summary>🖥️ Software</summary>
