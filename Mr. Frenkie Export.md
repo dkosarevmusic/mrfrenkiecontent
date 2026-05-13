@@ -195,41 +195,41 @@
 > > ### Drum'n'Bass
 > >
 > >
-> > > > ##### Old DnB Tutorials
-> > > > - [Mr. Frenkie: Tutorial part 1 - Bass, Reece, Midline - YouTube](https://youtu.be/o9puchmU43c?si=HcNodvpjvwgiu5Sr)
-> > > > - [Mr. Frenkie: Tutorial part 2 - New School, Deep - YouTube](https://youtu.be/8AvYa3izpe4?si=1LHtBpb00AwbgQH7)
-> > > > - [Mr. Frenkie: Tutorial part 3 - Composing Beats - YouTube](https://youtu.be/qObWVgwFxAQ?si=x-Kb_hYwYzTpv0bZ)
-> > > > - [Bitwig Studio - Частотный Sidechain (Multiband Sidechain) - YouTube](https://youtu.be/wM5NiRMw7UE?si=ttzJjqQfoijbhBdI)
-> > > > - [Serum DnB Bass Tutorial - YouTube](https://youtu.be/3WXLRmv5wUw?si=bnhC87nQcBdyYeSS)
-> > >
-> > > > ##### Common
-> > > > - [Апрельский драм - YouTube](https://www.youtube.com/live/RZiupaojxdk?si=9vwD-I3Tpr1YP7vG)
-> > > > - [Жухлый драм. Запись стрима.](https://boosty.to/mrfrenkie/posts/28c879dd-5ef7-4837-8d11-af2b55c8cd33) 
-> > > > - [Мелодик днб на серуме - YouTube](https://www.youtube.com/live/gISUePnFfyI?si=kAxcHFYsHIhbar2i) [Проект с последнего стрима (Мелодик днб)](https://boosty.to/mrfrenkie/posts/888e2f32-b485-48f0-8b32-209c4371f83f)
-> > > > - [Стрим: Драм сам себя не напишет.](https://boosty.to/mrfrenkie/posts/d7e14fbb-4d72-4877-9039-e09112722d54)
-> > > > - [Делать ли сайдчейн от снеера в днб? (заметка)](https://boosty.to/mrfrenkie/posts/339cb98f-f8c9-418d-836d-0bc9ca272f2f)
-> > > > - [Как писать мейнстрим днб](https://boosty.to/mrfrenkie/posts/fec7293d-743b-4231-960c-84e2632d7166) [Мейнстрим звучал идеально… пока я не включил его в клубе](https://boosty.to/mrfrenkie/posts/49b5eb3a-259e-4d86-8b23-6c85adc67d20)
-> > >
-> > >
+> > > #### Old DnB Tutorials
+> > > - [Mr. Frenkie: Tutorial part 1 - Bass, Reece, Midline - YouTube](https://youtu.be/o9puchmU43c?si=HcNodvpjvwgiu5Sr)
+> > > - [Mr. Frenkie: Tutorial part 2 - New School, Deep - YouTube](https://youtu.be/8AvYa3izpe4?si=1LHtBpb00AwbgQH7)
+> > > - [Mr. Frenkie: Tutorial part 3 - Composing Beats - YouTube](https://youtu.be/qObWVgwFxAQ?si=x-Kb_hYwYzTpv0bZ)
+> > > - [Bitwig Studio - Частотный Sidechain (Multiband Sidechain) - YouTube](https://youtu.be/wM5NiRMw7UE?si=ttzJjqQfoijbhBdI)
+> > > - [Serum DnB Bass Tutorial - YouTube](https://youtu.be/3WXLRmv5wUw?si=bnhC87nQcBdyYeSS)
+> >
+> > > #### Common
+> > > - [Апрельский драм - YouTube](https://www.youtube.com/live/RZiupaojxdk?si=9vwD-I3Tpr1YP7vG)
+> > > - [Жухлый драм. Запись стрима.](https://boosty.to/mrfrenkie/posts/28c879dd-5ef7-4837-8d11-af2b55c8cd33) 
+> > > - [Мелодик днб на серуме - YouTube](https://www.youtube.com/live/gISUePnFfyI?si=kAxcHFYsHIhbar2i) [Проект с последнего стрима (Мелодик днб)](https://boosty.to/mrfrenkie/posts/888e2f32-b485-48f0-8b32-209c4371f83f)
+> > > - [Стрим: Драм сам себя не напишет.](https://boosty.to/mrfrenkie/posts/d7e14fbb-4d72-4877-9039-e09112722d54)
+> > > - [Делать ли сайдчейн от снеера в днб? (заметка)](https://boosty.to/mrfrenkie/posts/339cb98f-f8c9-418d-836d-0bc9ca272f2f)
+> > > - [Как писать мейнстрим днб](https://boosty.to/mrfrenkie/posts/fec7293d-743b-4231-960c-84e2632d7166) [Мейнстрим звучал идеально… пока я не включил его в клубе](https://boosty.to/mrfrenkie/posts/49b5eb3a-259e-4d86-8b23-6c85adc67d20)
+> >
+> >
 > > ### Techno
 > >
-> > > > ##### Common
-> > > > - [Techno vs. Hip Hop w/Bitwig Studio Poly Grid - YouTube](https://www.youtube.com/live/x-uxSUpG6MM?si=bxSwAHAzfjpOUDBb)
-> > > > - [Bitwig Poly Grid Techno Jam (Stream) - YouTube](https://www.youtube.com/live/qx8-7jrP4l4?si=xVXg4gMAc2hNsQbK)
-> > > > - [Техно трек написал - YouTube](https://www.youtube.com/live/GMQgnRHURK0?si=dv_AalnHThpXXni7)
-> > > > - [Звуки для сна жены: vcv, кислота, клок, мутабор, сайдчейн проскакивает - YouTube](https://www.youtube.com/live/4IlHbTZAj6g?si=dcgjuMUNQmZv-GQe)
-> > > > - [Два способа техно секвенций. VCV и Grid + патчи.](https://boosty.to/mrfrenkie/posts/e4a3153c-5d44-4624-a8bb-5fc8f43d7a2b)
-> > > > - [Grid, ангар, техно](https://www.youtube.com/live/QVjr1GBlIFg) [Rumble Kick. Poly Grid 5.1](https://boosty.to/mrfrenkie/posts/4168b8ee-c44f-47a1-961b-5900470ece10)
-> > > > - [Техно-джем с заставкой к моим стримам](https://boosty.to/mrfrenkie/posts/fa5f2204-cb50-480b-8de8-f2bc4f0881eb)
-> > > > - [Техно база 2025 + проект + стемы](https://boosty.to/mrfrenkie/posts/8d2f8ad8-9dcb-4976-be99-a987a7150b77?share=post_link)
-> > > > - [Как я осваиваю новые жанры. SHRANZ](https://boosty.to/mrfrenkie/posts/ab5fc5e7-5292-4fe6-88a6-8683b2cecb0d?share=post_link)
-> > > > ##### "Techno-база" Series
-> > > > - [Techno база ч.1 Философия + Rumbling](https://boosty.to/mrfrenkie/posts/d0c9ce5d-3f67-48a4-a782-c3a564417e38)
-> > > > - [Techno база ч.2 Секвенции + Пресеты](https://boosty.to/mrfrenkie/posts/7151b545-4d92-4944-b65e-12040e91d900)
-> > > > - [Техно база ч.3 Сердце техно-продюсера](https://boosty.to/mrfrenkie/posts/f76aa784-1f06-4487-a2c1-8fe5aa37ace4)
-> > > > - [Techno мелочёвка с которой интереснее](https://boosty.to/mrfrenkie/posts/4282b706-6535-4bb0-8dc4-bc7bd1615c48)
-> > >
-> > >
+> > > #### Common
+> > > - [Techno vs. Hip Hop w/Bitwig Studio Poly Grid - YouTube](https://www.youtube.com/live/x-uxSUpG6MM?si=bxSwAHAzfjpOUDBb)
+> > > - [Bitwig Poly Grid Techno Jam (Stream) - YouTube](https://www.youtube.com/live/qx8-7jrP4l4?si=xVXg4gMAc2hNsQbK)
+> > > - [Техно трек написал - YouTube](https://www.youtube.com/live/GMQgnRHURK0?si=dv_AalnHThpXXni7)
+> > > - [Звуки для сна жены: vcv, кислота, клок, мутабор, сайдчейн проскакивает - YouTube](https://www.youtube.com/live/4IlHbTZAj6g?si=dcgjuMUNQmZv-GQe)
+> > > - [Два способа техно секвенций. VCV и Grid + патчи.](https://boosty.to/mrfrenkie/posts/e4a3153c-5d44-4624-a8bb-5fc8f43d7a2b)
+> > > - [Grid, ангар, техно](https://www.youtube.com/live/QVjr1GBlIFg) [Rumble Kick. Poly Grid 5.1](https://boosty.to/mrfrenkie/posts/4168b8ee-c44f-47a1-961b-5900470ece10)
+> > > - [Техно-джем с заставкой к моим стримам](https://boosty.to/mrfrenkie/posts/fa5f2204-cb50-480b-8de8-f2bc4f0881eb)
+> > > - [Техно база 2025 + проект + стемы](https://boosty.to/mrfrenkie/posts/8d2f8ad8-9dcb-4976-be99-a987a7150b77?share=post_link)
+> > > - [Как я осваиваю новые жанры. SHRANZ](https://boosty.to/mrfrenkie/posts/ab5fc5e7-5292-4fe6-88a6-8683b2cecb0d?share=post_link)
+> > > #### "Techno-база" Series
+> > > - [Techno база ч.1 Философия + Rumbling](https://boosty.to/mrfrenkie/posts/d0c9ce5d-3f67-48a4-a782-c3a564417e38)
+> > > - [Techno база ч.2 Секвенции + Пресеты](https://boosty.to/mrfrenkie/posts/7151b545-4d92-4944-b65e-12040e91d900)
+> > > - [Техно база ч.3 Сердце техно-продюсера](https://boosty.to/mrfrenkie/posts/f76aa784-1f06-4487-a2c1-8fe5aa37ace4)
+> > > - [Techno мелочёвка с которой интереснее](https://boosty.to/mrfrenkie/posts/4282b706-6535-4bb0-8dc4-bc7bd1615c48)
+> >
+> >
 > > ### Melodic Techno
 > >
 > > - [Melodic Techno в Bitwig Studio - YouTube](https://www.youtube.com/live/DV6vWgq1HSg?si=px6eNe17KDhVW1F8)
