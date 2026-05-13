@@ -4,7 +4,11 @@
 <details>
 <summary>🎛️ Music Sound-Design</summary>
 
-## 🥁 Drum Synthesis
+</details>
+
+<details>
+<summary>🥁 Drum Synthesis</summary>
+
 
 ### Presets
 
@@ -54,7 +58,11 @@
 - [Железо для днб. Из белого шума](https://boosty.to/mrfrenkie/posts/6282a549-f433-4893-99b4-d0b7eeba81b4) ([YouTube](https://youtu.be/dfIJgi72JIw?si=gw1hunEY6go0vHrF))
 
 
-## 🎸 Bass Synthesis
+</details>
+
+<details>
+<summary>🎸 Bass Synthesis</summary>
+
 
 ### Videos
 
@@ -88,7 +96,11 @@
 
 
 
-## 🎶 Not Bass Synthesis
+</details>
+
+<details>
+<summary>🎶 Not Bass Synthesis</summary>
+
 
 ### Presets
 
@@ -103,7 +115,11 @@
 - [Пэды](https://boosty.to/mrfrenkie/posts/9a7b5a3d-3992-480f-839b-6c25ddce6c17)
 
 
-## ⚙️ Synth Techniques 
+</details>
+
+<details>
+<summary>⚙️ Synth Techniques</summary>
+
 
 #### Phase
 
@@ -142,7 +158,11 @@
 <details>
 <summary>🎶 Arrangement and Genre-Specific Sound-Design</summary>
 
-## 🛠️ Common
+</details>
+
+<details>
+<summary>🛠️ Common</summary>
+
 
 #### Drums
 
@@ -156,12 +176,20 @@
 - [Билдап (Razgon)](https://boosty.to/mrfrenkie/posts/1fed6ae0-ad36-4bd8-a7e3-cd609e83d9f2)
 
 
-## 🎼 Music Theory
+</details>
+
+<details>
+<summary>🎼 Music Theory</summary>
+
 #### Harmony
 - [Моя база по гармонии](https://boosty.to/mrfrenkie/posts/3d0a90be-dd17-4ea0-bb74-d66c824e8d0b)
 
 
-## 🎵 Genres
+</details>
+
+<details>
+<summary>🎵 Genres</summary>
+
 
 #### Bass House
 
@@ -271,7 +299,11 @@
 - [DUNE синематик патч (и что-то там про блины)](https://boosty.to/mrfrenkie/posts/a9be6c4c-382a-4422-bddf-b6dd7f7081c3) ([DUNE 3 Пресеты из стрима](https://boosty.to/mrfrenkie/posts/ef351355-d7e7-4d56-aab2-ba266dacbcc5))
 
 
-## 🎧 Subscribers Music
+</details>
+
+<details>
+<summary>🎧 Subscribers Music</summary>
+
 
 #### Democheck
 - [Разбор ваших треков. Jan 16 2023](https://boosty.to/mrfrenkie/posts/2fed3475-b9f1-45ac-95f1-f08b6975ea9d)
@@ -304,14 +336,22 @@
 - 🆕[Бустичек 17.04.2026](https://boosty.to/mrfrenkie/posts/3c077fcd-86c3-49e2-b79f-168ccb98fab4)
 
 
-## 🎧 Frenkie Music
+</details>
+
+<details>
+<summary>🎧 Frenkie Music</summary>
+
 
 #### Track Review
 - [Обзор моего ремикса на Prolix & Black Sun Empire - Savages (feat. Virus Syndicate)](https://boosty.to/mrfrenkie/posts/ae4e66aa-0668-49e9-b7c7-b500662ad1d7)
 - [Обзор "Mr. Frenkie - Bass Symptom"](https://boosty.to/mrfrenkie/posts/744d77c7-07e0-4b7c-b119-441e9d2b32bf)
 
 
-## 🎧 Reference Music
+</details>
+
+<details>
+<summary>🎧 Reference Music</summary>
+
 
 #### Form Review
 - [Референс-трек (Noisia)](https://boosty.to/mrfrenkie/posts/0f57170b-0e04-44e3-bb57-0409273fe0a7)
@@ -331,7 +371,11 @@
 <details>
 <summary>🎚️ Mixing and Mastering</summary>
 
-## 🧰 Utilities
+</details>
+
+<details>
+<summary>🧰 Utilities</summary>
+
 
 ### Presets
 - [Самый главный плагин](https://boosty.to/mrfrenkie/posts/0e867f52-35f3-4229-9563-23d546969f5f)
@@ -343,7 +387,11 @@
 - [Жиры и углеводы для ваших тембров](https://boosty.to/mrfrenkie/posts/f1be49cc-23c2-451a-bca3-f7c61291893c)
 
 
-## 🎚️ Mix
+</details>
+
+<details>
+<summary>🎚️ Mix</summary>
+
 
 #### Drums
 
@@ -376,7 +424,11 @@
 
 
 
-## 🔊 Master
+</details>
+
+<details>
+<summary>🔊 Master</summary>
+
 
 #### Common
 
@@ -431,7 +483,11 @@
 <summary>🖥️ Software</summary>
 
 
-## 💻 DAW
+</details>
+
+<details>
+<summary>💻 DAW</summary>
+
 
 #### Reaper
 
@@ -482,7 +538,11 @@
 
 
 
-## 🔌 Plugins Review
+</details>
+
+<details>
+<summary>🔌 Plugins Review</summary>
+
 
 #### Youtube
 - [Mr. Frenkie - Обзор UVI Falcon - YouTube](https://youtu.be/iDl4Rfr74vM?si=SlvA6-eZWkL_EYPH)
