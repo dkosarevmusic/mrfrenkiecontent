@@ -17,6 +17,7 @@
 > >- [Мои личные пресеты для Kick Ninja](https://boosty.to/mrfrenkie/posts/cb02ee6f-ea98-4cf9-91ec-e0a693622fcb)
 > 
 > 
+> 
 > >### Videos
 > >
 > >
@@ -32,15 +33,20 @@
 > > > >- [Я создал Кик Машину](https://boosty.to/mrfrenkie/posts/9b1a98d3-63e1-41cf-95ba-b1f66d427c18)
 > > > >- [Kick Ninja с восхищением](https://boosty.to/mrfrenkie/posts/1c82fc35-7bf8-4dc6-87a7-a4e01404db73)
 > > > >- [Audija KickDrum: лучший Kick синтезатор - YouTube](https://www.youtube.com/live/jyOnGBdAB1A?si=yfb1-O-HT4N1U6F_)
+> > > 
 > > > >##### Rumble
 > > > >- [Rumble Techno-House Kick + ПРЕСЕТЫ](https://boosty.to/mrfrenkie/posts/2346e2db-cbd8-484f-9f7a-5b38fe6ee7a4)
 > > > >- [Ещё немного про Rumble Kick](https://boosty.to/mrfrenkie/posts/80ba206f-8eb6-4b91-b480-386196e3d35d)
 > > > >- [Опять Rumble Kick](https://boosty.to/mrfrenkie/posts/615b3490-e090-4416-80af-175d900606cf)
 > > > >- [Последний туториал по рамблу, который вам понадобится](https://boosty.to/mrfrenkie/posts/f86eec5d-3030-48f7-9442-e47776d42387?share=post_link)
+> > > 
 > > > >##### House
 > > > >- [House Music Kick Клик + Serum Пресет](https://boosty.to/mrfrenkie/posts/33983cf1-2dba-4c3b-897a-84a13efb949e)
+> > > 
 > > > >##### Drum and Bass
 > > > >- [Синтез Kick для Drum And Bass](https://boosty.to/mrfrenkie/posts/f1a935f0-2b60-4aab-8a77-7f3f486cc096)
+> > 
+> > 
 > > 
 > > 
 > > >#### Snare
@@ -49,6 +55,7 @@
 > > >- [Пробивной и громкий snare + пресет](https://boosty.to/mrfrenkie/posts/ba947711-c463-483f-92d9-0b96def7aba7)
 > > >- [Снеер дистортион + пресет (заметка)](https://boosty.to/mrfrenkie/posts/836acb6a-314f-4131-8fba-f562161c4ec3)
 > > >- [Маленькие снееры](https://boosty.to/mrfrenkie/posts/9f7942d1-3a87-4b39-8169-c6c2f40d651f)
+> > 
 > > 
 > > 
 > > >#### Cymbals
@@ -70,10 +77,12 @@
 > > >- [Стрим: Почему бас - не Сабит](https://boosty.to/mrfrenkie/posts/745a0149-876a-4b04-9a74-d99e71a3e377)
 > > 
 > > 
+> > 
 > > >#### Saw Bass
 > > >
 > > >- [Фирмовый бас из пилы](https://boosty.to/mrfrenkie/posts/2a30f2e5-07fc-4d09-9c0f-932a3df842de)
 > > >- [Субтрактивный синтез всё ещё могёт](https://boosty.to/mrfrenkie/posts/0a2a4119-3440-4b12-849d-d305cd122e8f?share=post_link)
+> > 
 > > 
 > > 
 > > >#### "С чего начинается Bass" Series
@@ -84,6 +93,7 @@
 > > >- [С чего начинается Bass (часть 4)](https://boosty.to/mrfrenkie/posts/c2ebe666-18ac-4d26-9b62-da2fe63bdb0f)
 > > >- [С чего начинается Bass (часть 4.5) Brass/Filter FM](https://boosty.to/mrfrenkie/posts/9f14377e-8089-48a3-b6f8-97c3f4c37efc)
 > > >- [С чего начинается Bass (ч. 5) ACID](https://boosty.to/mrfrenkie/posts/719ad41e-4c2b-4b1a-88d1-1d3766a75d54)
+> > 
 > > 
 > > 
 > > >#### "Just Bass" Series
@@ -105,6 +115,7 @@
 > >- [Пресет и волновая таблица "Vital 1"из стрима по Serum](https://boosty.to/mrfrenkie/posts/7a7314fa-4122-4bf3-89c2-d25b2faf31b9)
 > 
 > 
+> 
 > >### Videos
 > >
 > >- [Pluck](https://boosty.to/mrfrenkie/posts/7973a270-5c1c-4bcb-b3e7-5aa1ea2aa3d3)
@@ -122,6 +133,7 @@
 > >- [Фаза в звуке/музыке](https://boosty.to/mrfrenkie/posts/d54e30d5-5bd6-4983-8d66-9287d71eb14e)
 > 
 > 
+> 
 > >### Voice Stacking
 > >
 > >- [Полифонический фильтр или LP Cutoff FM. VCV Rack.](https://boosty.to/mrfrenkie/posts/2333fd31-ef73-4c46-abd3-3a5756644343)
@@ -131,6 +143,7 @@
 > >- [Полифонические аудио-эффекты](https://boosty.to/mrfrenkie/posts/e9a9b0ba-7748-432d-af82-437f2cade52f)
 > 
 > 
+> 
 > >### FM
 > >
 > >- [FM стрим 24.08.2022](https://boosty.to/mrfrenkie/posts/756c5790-f0c4-4aee-a65d-b657f944aa4d) (Brass Synth, DnB)
@@ -138,9 +151,11 @@
 > >- 🆕[Интерференция ебала](https://boosty.to/mrfrenkie/posts/b9f77a4a-41ed-480e-8a0c-03192d547e7f?share=post_link)
 > 
 > 
+> 
 > >### Wavetable
 > >
 > >- [Варпинг волновых форм в Poly Grid (Bend+/-)](https://boosty.to/mrfrenkie/posts/600c1b37-d262-449d-af0a-4027915aa8d0)
+> 
 > 
 > 
 > >### Physical Modelling
@@ -164,6 +179,7 @@
 > >- [Пульсация или брейк? Работа с грувом в ударке](https://boosty.to/mrfrenkie/posts/c23bcc82-cb72-4399-9937-a4b5010a1b87)
 > 
 > 
+> 
 > >### Build-up
 > >
 > >- [Билдап (Razgon)](https://boosty.to/mrfrenkie/posts/1fed6ae0-ad36-4bd8-a7e3-cd609e83d9f2)
@@ -173,7 +189,6 @@
 > <details>
 > <summary>🎼 Music Theory</summary>
 >
-> 
 > >### Harmony
 > >- [Моя база по гармонии](https://boosty.to/mrfrenkie/posts/3d0a90be-dd17-4ea0-bb74-d66c824e8d0b)
 > >
@@ -188,6 +203,7 @@
 > >- [Bass House для самых маленьких - YouTube](https://youtu.be/LZzHNpSfAKw?si=sGkMD3zkDLNsQU1n)
 > 
 > 
+> 
 > >### Drum'n'Bass
 > >
 > >
@@ -198,6 +214,7 @@
 > > >- [Bitwig Studio - Частотный Sidechain (Multiband Sidechain) - YouTube](https://youtu.be/wM5NiRMw7UE?si=ttzJjqQfoijbhBdI)
 > > >- [Serum DnB Bass Tutorial - YouTube](https://youtu.be/3WXLRmv5wUw?si=bnhC87nQcBdyYeSS)
 > > 
+> > 
 > > >#### Common
 > > >- [Апрельский драм - YouTube](https://www.youtube.com/live/RZiupaojxdk?si=9vwD-I3Tpr1YP7vG)
 > > >- [Жухлый драм. Запись стрима.](https://boosty.to/mrfrenkie/posts/28c879dd-5ef7-4837-8d11-af2b55c8cd33) 
@@ -205,6 +222,8 @@
 > > >- [Стрим: Драм сам себя не напишет.](https://boosty.to/mrfrenkie/posts/d7e14fbb-4d72-4877-9039-e09112722d54)
 > > >- [Делать ли сайдчейн от снеера в днб? (заметка)](https://boosty.to/mrfrenkie/posts/339cb98f-f8c9-418d-836d-0bc9ca272f2f)
 > > >- [Как писать мейнстрим днб](https://boosty.to/mrfrenkie/posts/fec7293d-743b-4231-960c-84e2632d7166) [Мейнстрим звучал идеально… пока я не включил его в клубе](https://boosty.to/mrfrenkie/posts/49b5eb3a-259e-4d86-8b23-6c85adc67d20)
+> 
+> 
 > 
 > 
 > >### Techno
@@ -219,11 +238,14 @@
 > > >- [Техно-джем с заставкой к моим стримам](https://boosty.to/mrfrenkie/posts/fa5f2204-cb50-480b-8de8-f2bc4f0881eb)
 > > >- [Техно база 2025 + проект + стемы](https://boosty.to/mrfrenkie/posts/8d2f8ad8-9dcb-4976-be99-a987a7150b77?share=post_link)
 > > >- [Как я осваиваю новые жанры. SHRANZ](https://boosty.to/mrfrenkie/posts/ab5fc5e7-5292-4fe6-88a6-8683b2cecb0d?share=post_link)
+> > 
 > > >#### "Techno-база" Series
 > > >- [Techno база ч.1 Философия + Rumbling](https://boosty.to/mrfrenkie/posts/d0c9ce5d-3f67-48a4-a782-c3a564417e38)
 > > >- [Techno база ч.2 Секвенции + Пресеты](https://boosty.to/mrfrenkie/posts/7151b545-4d92-4944-b65e-12040e91d900)
 > > >- [Техно база ч.3 Сердце техно-продюсера](https://boosty.to/mrfrenkie/posts/f76aa784-1f06-4487-a2c1-8fe5aa37ace4)
 > > >- [Techno мелочёвка с которой интереснее](https://boosty.to/mrfrenkie/posts/4282b706-6535-4bb0-8dc4-bc7bd1615c48)
+> 
+> 
 > 
 > 
 > >### Melodic Techno
@@ -232,6 +254,7 @@
 > >- [Две простые техники для Melodic Techno](https://boosty.to/mrfrenkie/posts/90f1466f-9227-4078-9ba6-9780d138a544)
 > >- [Melodic Techno. Пишем и обсуждаем особенности жанра. - YouTube](https://www.youtube.com/live/0I7vahZ-BBk?si=ZxiVUQX0qKuDwPsV)
 > >- [О Melodic Techno + проект + стемы](https://boosty.to/mrfrenkie/posts/0e5252a7-6422-4e81-9233-1f7e9d0827b8?share=post_link)
+> 
 > 
 > 
 > >### House
@@ -243,14 +266,17 @@
 > >- [Как воспитать в себе хаус](https://boosty.to/mrfrenkie/posts/45610dc8-964c-4a23-8201-3b9b13f82830?share=post_link)
 > 
 > 
+> 
 > >### Trance
 > >
 > >- [Трансик в Studio One](https://www.youtube.com/live/5Gtn0kAf3Ew) [суперпилы для Phase Plant](https://boosty.to/mrfrenkie/posts/bf8e0496-fdc8-4e99-ba83-a4d6eeebc50f)
 > 
 > 
+> 
 > >### Garage
 > >
 > >- [Garage дроп выходного дня](https://boosty.to/mrfrenkie/posts/7f7ae183-5228-4d55-8087-beeefd18fa99)
+> 
 > 
 > 
 > >### Dubstep
@@ -260,10 +286,12 @@
 > >- [Батя-Growl со стрима](https://boosty.to/mrfrenkie/posts/0d42b580-e38b-4395-978a-82e75e935495)
 > 
 > 
+> 
 > >### Hip-Hop
 > >
 > >- [Techno vs. Hip Hop w/Bitwig Studio Poly Grid - YouTube](https://www.youtube.com/live/x-uxSUpG6MM?si=bxSwAHAzfjpOUDBb)
 > >- [Boom Bap хип хоп ударка - Mr. Frenkie](https://boosty.to/mrfrenkie/posts/23f24154-6731-40f4-98be-5787c62f647f)
+> 
 > 
 > 
 > >### Future Beats
@@ -271,8 +299,10 @@
 > >- [Future Beats in Bitwig Studio - YouTube](https://www.youtube.com/live/gmrCGVp1IOg?si=J1iyNXambD7J4Ozx)
 > 
 > 
+> 
 > >### Midtempo
 > >- [Дроп "IMPROVER- Feel The Future" на синтах - YouTube](https://www.youtube.com/live/-2zitO3CN_w?si=0RTfL1dnBxk1TcsU)
+> 
 > 
 > 
 > >### Breakbeat
@@ -281,9 +311,11 @@
 > >- [Брейкбит и болтаем](https://www.youtube.com/live/jf55lZJFkwY?si=FTPPaXSTRYvPmSkL)
 > 
 > 
+> 
 > >### Progressive Breaks
 > >
 > >- [Прогрессив Брейкс - YouTube](https://www.youtube.com/live/yrNnB_6Qyb0?si=LBK_1nxdGSK9OOYC)
+> 
 > 
 > 
 > >### Cinematic
@@ -347,8 +379,10 @@
 > >- [Анализирую форму референсных треков](https://boosty.to/mrfrenkie/posts/5b215b7f-fd61-4960-90be-afd6714ba082)
 > 
 > 
+> 
 > >### Thoughts
 > >- [О референсах и изобретении жанров](https://boosty.to/mrfrenkie/posts/d45fe9ac-f4b6-4696-afef-78f75d5b98bc)
+> 
 > 
 > 
 > >### Subscribers References
@@ -389,9 +423,11 @@
 > >- ["Сведение" бочки в EDM](https://boosty.to/mrfrenkie/posts/5a7a940c-90f7-4a30-9c67-a6d7c6bdd223)
 > 
 > 
+> 
 > >### Bass
 > >
 > >- [Как свести бочку и бас на разных нотах. Опять про фазу.](https://boosty.to/mrfrenkie/posts/a19d9bd1-e6d7-413d-8596-1e7732104392)
+> 
 > 
 > 
 > >### Full track
@@ -402,6 +438,7 @@
 > > >
 > > >- [Сведение моего трека "Лёли". Drums](https://boosty.to/mrfrenkie/posts/af85cd5a-833e-46a6-b32e-9d730562e033)
 > > >- [Сведение моего трека "Лёли". Drums+Bass](https://boosty.to/mrfrenkie/posts/802df732-f4d9-46a1-b675-6aa4229b0a02)
+> > 
 > > 
 > > 
 > > >#### Subscribers
@@ -422,6 +459,7 @@
 > >- [Как я анализирую звук и референсы.](https://boosty.to/mrfrenkie/posts/33777aba-a30d-4e89-8a8e-efee79827a10)
 > 
 > 
+> 
 > >### Loudness
 > >
 > >- [Почему LUFS а не dBFS (RMS)](https://boosty.to/mrfrenkie/posts/bfb213ca-ff36-45f3-b057-e3fc01c908af)
@@ -430,10 +468,12 @@
 > >- [Мастеринг ультра-громкого микса](https://boosty.to/mrfrenkie/posts/3e7c3fbb-ce81-4558-8ce4-74bd75193d3d)
 > 
 > 
+> 
 > >### Tonal Balance
 > >
 > >- [О Тональном Балансе](https://boosty.to/mrfrenkie/posts/b47f7b73-5397-4601-bce0-0eea1e2fb980)
 > >- [Тональный баланс в ультра-громких треках](https://boosty.to/mrfrenkie/posts/68acc25d-1aee-450a-9640-2e8e74a8f9b9)
+> 
 > 
 > 
 > >### Lo-Mid
@@ -484,9 +524,12 @@
 > > >- [REAPER+ - Универсальные извлекаторы аккордов](https://boosty.to/mrfrenkie/posts/a6082067-353b-414d-b6b4-253bee44b188?share=post_link)
 > 
 > 
+> 
+> 
 > >### Studio One
 > >
 > >- [Presonus Studio One 7. Обзор нововведений и мои наработки](https://boosty.to/mrfrenkie/posts/94705791-6249-4710-9f57-751401dda1d7) ([YouTube](https://www.youtube.com/live/CDKSCOoOT2Y?si=Pl7QKca7jpkIpLAZ))
+> 
 > 
 > 
 > >### Bitwig Studio
@@ -507,6 +550,7 @@
 > > >- [Bitwig Studio Wavetable Synth \[ENG Subs\] - YouTube](https://youtu.be/f2XaU5EMJEM?si=CZXii9PL5CSXugMV)
 > > >- [BITWIG STUDIO 3.2 Beta 3 - YouTube](https://www.youtube.com/live/etM2bp_m2l4?si=xh9LG417XsAcopYL)
 > > >- [Кручу Bitwig Studio 5 Beta - YouTube](https://www.youtube.com/live/BZGSmLqdsAc?si=Ui3y0vLRSlItfME3)
+> > 
 > > 
 > > 
 > > >#### Grid
