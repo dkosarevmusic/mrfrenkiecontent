@@ -4,12 +4,12 @@
 # 🎛️ Music Sound-Design
 
 <details>
-<summary>Содержимое раздела</summary>
+<summary>...</summary>
 
 > ## 🥁 Drum Synthesis
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 >
 > >### Presets
@@ -72,7 +72,7 @@
 > ## 🎸 Bass Synthesis
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 >
 > >### Videos
@@ -115,7 +115,7 @@
 > ## 🎶 Not Bass Synthesis
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 >
 > >### Presets
@@ -137,7 +137,7 @@
 > ## ⚙️ Synth Techniques 
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 >
 > >### Phase
@@ -183,12 +183,12 @@
 # 🎶 Arrangement and Genre-Specific Sound-Design
 
 <details>
-<summary>Содержимое раздела</summary>
+<summary>...</summary>
 
 > ## 🛠️ Common
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 >
 > >### Drums
@@ -209,7 +209,7 @@
 > ## 🎼 Music Theory
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 > >### Harmony
 > >- [Моя база по гармонии](https://boosty.to/mrfrenkie/posts/3d0a90be-dd17-4ea0-bb74-d66c824e8d0b)
@@ -220,7 +220,7 @@
 > ## 🎵 Genres
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 >
 > >### Bass House
@@ -353,7 +353,7 @@
 > ## 🎧 Subscribers Music
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 >
 > >### Democheck
@@ -392,7 +392,7 @@
 > ## 🎧 Frenkie Music
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 >
 > >### Track Review
@@ -405,7 +405,7 @@
 > ## 🎧 Reference Music
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 >
 > >### Form Review
@@ -430,12 +430,12 @@
 # 🎚️ Mixing and Mastering
 
 <details>
-<summary>Содержимое раздела</summary>
+<summary>...</summary>
 
 > ## 🧰 Utilities
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 >
 > >### Presets
@@ -453,7 +453,7 @@
 > ## 🎚️ Mix
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 >
 > >### Drums
@@ -495,7 +495,7 @@
 > ## 🔊 Master
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 >
 > >### Common
@@ -535,7 +535,7 @@
 # ❓ Tips and Tricks / Q&A
 
 <details>
-<summary>Содержимое раздела</summary>
+<summary>...</summary>
 
 
 ### Little bit of everything
@@ -557,13 +557,13 @@
 # 🖥️ Software
 
 <details>
-<summary>Содержимое раздела</summary>
+<summary>...</summary>
 
 
 > ## 💻 DAW
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 >
 > >### Reaper
@@ -624,7 +624,7 @@
 > ## 🔌 Plugins Review
 >
 > <details>
-> <summary>Содержимое подраздела</summary>
+> <summary>...</summary>
 >
 >
 > >### Youtube
