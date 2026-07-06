@@ -46,6 +46,7 @@
 > > > 
 > > > >##### House
 > > > >- [House Music Kick Клик + Serum Пресет](https://boosty.to/mrfrenkie/posts/33983cf1-2dba-4c3b-897a-84a13efb949e)
+> > > >- 🆕[House Kick (909 Style)](https://boosty.to/mrfrenkie/posts/54ce1bad-cd17-4dea-ab0a-ae9859b7073c)
 > > > 
 > > > >##### Drum and Bass
 > > > >- [Синтез Kick для Drum And Bass](https://boosty.to/mrfrenkie/posts/f1a935f0-2b60-4aab-8a77-7f3f486cc096)
@@ -82,6 +83,7 @@
 > > >#### Sub
 > > >
 > > >- [Стрим: Почему бас - не Сабит](https://boosty.to/mrfrenkie/posts/745a0149-876a-4b04-9a74-d99e71a3e377)
+> > >- 🆕[Суб-басс 2026 + пресет](https://boosty.to/mrfrenkie/posts/1f0feb95-c590-4201-a838-eb2fb96f8815)
 > > 
 > > 
 > > 
@@ -161,7 +163,7 @@
 > >
 > >- [FM стрим 24.08.2022](https://boosty.to/mrfrenkie/posts/756c5790-f0c4-4aee-a65d-b657f944aa4d) (Brass Synth, DnB)
 > >- [Снова труба!](https://boosty.to/mrfrenkie/posts/fdcb88db-7e1f-423a-8076-a1c1012d3d15) (Brass Synth)
-> >- 🆕[Интерференция ебала](https://boosty.to/mrfrenkie/posts/b9f77a4a-41ed-480e-8a0c-03192d547e7f?share=post_link)
+> >- [Интерференция ебала](https://boosty.to/mrfrenkie/posts/b9f77a4a-41ed-480e-8a0c-03192d547e7f?share=post_link)
 > 
 > 
 > 
@@ -289,6 +291,7 @@
 > >- [Хаус (техно-хаус) ударка. Рамбл, топы, бочка](https://boosty.to/mrfrenkie/posts/e87362d1-fb26-42d8-9a02-bf3fa3ce2de1)
 > >- [Техно-хаус с нуля](https://boosty.to/mrfrenkie/posts/2abc7908-03d0-43f7-9caf-dbd6a1f960e7)
 > >- [Как воспитать в себе хаус](https://boosty.to/mrfrenkie/posts/45610dc8-964c-4a23-8201-3b9b13f82830?share=post_link)
+> >- 🆕[Строим дом или гараж - YouTube](https://www.youtube.com/live/nZeXpKKxtbg?is=J-AJInY6rhJJBU7h)
 > 
 > 
 > 
@@ -343,6 +346,11 @@
 > 
 > 
 > 
+> >### Progressive
+> >- 🆕[Пишем взрослую музыку - Youtube](https://www.youtube.com/live/HVU5PcvQ36I?si=bi3f5whclueK0NMV)
+> 
+> 
+> 
 > >### Cinematic
 > >
 > >- [DUNE синематик патч (и что-то там про блины)](https://boosty.to/mrfrenkie/posts/a9be6c4c-382a-4422-bddf-b6dd7f7081c3) ([DUNE 3 Пресеты из стрима](https://boosty.to/mrfrenkie/posts/ef351355-d7e7-4d56-aab2-ba266dacbcc5))
@@ -384,7 +392,9 @@
 > >- [Бустичек 16.01.2026](https://boosty.to/mrfrenkie/posts/bf5df1ca-87fd-4651-ab23-ae919d60fef5?share=post_link)
 > >- [Бустичек 15.02.2026 feat. VOLAC](https://boosty.to/mrfrenkie/posts/2cd6e749-1cfa-4a8e-9dfb-08625f0001a6)
 > >- [Бустичек 15.03.2026](https://boosty.to/mrfrenkie/posts/c7432a3c-77e7-4fb5-9c16-b3a3b58daf27?share=post_link)
-> >- 🆕[Бустичек 17.04.2026](https://boosty.to/mrfrenkie/posts/3c077fcd-86c3-49e2-b79f-168ccb98fab4)
+> >- [Бустичек 17.04.2026](https://boosty.to/mrfrenkie/posts/3c077fcd-86c3-49e2-b79f-168ccb98fab4)
+> >- 🆕[Бустичек 16.05.2026](https://boosty.to/mrfrenkie/posts/c031c575-7900-4a11-a979-64e3898be552?share=post_link)
+> >- 🆕[Бустичек 20.06.2026](https://boosty.to/mrfrenkie/posts/45876ad8-37a5-4801-806e-bc28eef6d1d8?share=post_link)
 > >
 > >
 > </details>
@@ -446,6 +456,7 @@
 > >- [EDM'er - EDM патч из любого пресета](https://boosty.to/mrfrenkie/posts/53bfcf45-286e-430b-b03d-5333238ad7f7)
 > >- [Multipass Hyper OTT](https://boosty.to/mrfrenkie/posts/4b8b447d-95ba-4cf1-a145-058972f09a70)
 > >- [Жиры и углеводы для ваших тембров](https://boosty.to/mrfrenkie/posts/f1be49cc-23c2-451a-bca3-f7c61291893c)
+> >- 🆕[Multipass Hyper OTT](https://boosty.to/mrfrenkie/posts/4b8b447d-95ba-4cf1-a145-058972f09a70?share=post_link)
 > >
 > >
 > </details>
@@ -549,7 +560,7 @@
 - [Обо всём понемногу ч.4](https://boosty.to/mrfrenkie/posts/38b42639-c2f6-4b4d-847d-b382ab85e039)
 - [Обо всём понемногу ч.5](https://boosty.to/mrfrenkie/posts/8b59cfc0-4101-418d-8516-493654e533e2)
 - [Обо всём понемногу ч.6](https://boosty.to/mrfrenkie/posts/0acbda39-e7db-459a-a6c3-6a6ad4177821)
-- 🆕[Обо всём понемногу ч.7](https://boosty.to/mrfrenkie/posts/7d1b6494-1244-4b68-9176-4a133b3abebf)
+- [Обо всём понемногу ч.7](https://boosty.to/mrfrenkie/posts/7d1b6494-1244-4b68-9176-4a133b3abebf)
 
 
 </details>
