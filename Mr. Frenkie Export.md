@@ -1,6 +1,3 @@
-
----
-
 # 🎛️ Music Sound-Design
 
 <details>
@@ -37,6 +34,7 @@
 > > > >- [Я создал Кик Машину](https://boosty.to/mrfrenkie/posts/9b1a98d3-63e1-41cf-95ba-b1f66d427c18)
 > > > >- [Kick Ninja с восхищением](https://boosty.to/mrfrenkie/posts/1c82fc35-7bf8-4dc6-87a7-a4e01404db73)
 > > > >- [Audija KickDrum: лучший Kick синтезатор - YouTube](https://www.youtube.com/live/jyOnGBdAB1A?si=yfb1-O-HT4N1U6F_)
+> > > >- [Не смотрите это видео, если "всё это давно есть в Splice"](https://boosty.to/mrfrenkie/posts/1415bcbc-b81f-4b97-8eba-8e4c157e29e7)
 > > > 
 > > > >##### Rumble
 > > > >- [Rumble Techno-House Kick + ПРЕСЕТЫ](https://boosty.to/mrfrenkie/posts/2346e2db-cbd8-484f-9f7a-5b38fe6ee7a4)
@@ -46,10 +44,11 @@
 > > > 
 > > > >##### House
 > > > >- [House Music Kick Клик + Serum Пресет](https://boosty.to/mrfrenkie/posts/33983cf1-2dba-4c3b-897a-84a13efb949e)
-> > > >- 🆕[House Kick (909 Style)](https://boosty.to/mrfrenkie/posts/54ce1bad-cd17-4dea-ab0a-ae9859b7073c)
+> > > >- [House Kick (909 Style)](https://boosty.to/mrfrenkie/posts/54ce1bad-cd17-4dea-ab0a-ae9859b7073c)
 > > > 
 > > > >##### Drum and Bass
 > > > >- [Синтез Kick для Drum And Bass](https://boosty.to/mrfrenkie/posts/f1a935f0-2b60-4aab-8a77-7f3f486cc096)
+> > > >- [🆕Тряпки для ударки](https://boosty.to/mrfrenkie/posts/bf018468-78b3-4cb4-b306-6f0818334156)
 > > 
 > > 
 > > 
@@ -83,7 +82,7 @@
 > > >#### Sub
 > > >
 > > >- [Стрим: Почему бас - не Сабит](https://boosty.to/mrfrenkie/posts/745a0149-876a-4b04-9a74-d99e71a3e377)
-> > >- 🆕[Суб-басс 2026 + пресет](https://boosty.to/mrfrenkie/posts/1f0feb95-c590-4201-a838-eb2fb96f8815)
+> > >- [Суб-басс 2026 + пресет](https://boosty.to/mrfrenkie/posts/1f0feb95-c590-4201-a838-eb2fb96f8815)
 > > 
 > > 
 > > 
@@ -291,7 +290,7 @@
 > >- [Хаус (техно-хаус) ударка. Рамбл, топы, бочка](https://boosty.to/mrfrenkie/posts/e87362d1-fb26-42d8-9a02-bf3fa3ce2de1)
 > >- [Техно-хаус с нуля](https://boosty.to/mrfrenkie/posts/2abc7908-03d0-43f7-9caf-dbd6a1f960e7)
 > >- [Как воспитать в себе хаус](https://boosty.to/mrfrenkie/posts/45610dc8-964c-4a23-8201-3b9b13f82830?share=post_link)
-> >- 🆕[Строим дом или гараж - YouTube](https://www.youtube.com/live/nZeXpKKxtbg?is=J-AJInY6rhJJBU7h)
+> >- [Строим дом или гараж - YouTube](https://www.youtube.com/live/nZeXpKKxtbg?is=J-AJInY6rhJJBU7h)
 > 
 > 
 > 
@@ -347,7 +346,7 @@
 > 
 > 
 > >### Progressive
-> >- 🆕[Пишем взрослую музыку - Youtube](https://www.youtube.com/live/HVU5PcvQ36I?si=bi3f5whclueK0NMV)
+> >- [Пишем взрослую музыку - Youtube](https://www.youtube.com/live/HVU5PcvQ36I?si=bi3f5whclueK0NMV)
 > 
 > 
 > 
@@ -393,8 +392,10 @@
 > >- [Бустичек 15.02.2026 feat. VOLAC](https://boosty.to/mrfrenkie/posts/2cd6e749-1cfa-4a8e-9dfb-08625f0001a6)
 > >- [Бустичек 15.03.2026](https://boosty.to/mrfrenkie/posts/c7432a3c-77e7-4fb5-9c16-b3a3b58daf27?share=post_link)
 > >- [Бустичек 17.04.2026](https://boosty.to/mrfrenkie/posts/3c077fcd-86c3-49e2-b79f-168ccb98fab4)
-> >- 🆕[Бустичек 16.05.2026](https://boosty.to/mrfrenkie/posts/c031c575-7900-4a11-a979-64e3898be552?share=post_link)
-> >- 🆕[Бустичек 20.06.2026](https://boosty.to/mrfrenkie/posts/45876ad8-37a5-4801-806e-bc28eef6d1d8?share=post_link)
+> >- [Бустичек 16.05.2026](https://boosty.to/mrfrenkie/posts/c031c575-7900-4a11-a979-64e3898be552?share=post_link)
+> >- [Бустичек 20.06.2026](https://boosty.to/mrfrenkie/posts/45876ad8-37a5-4801-806e-bc28eef6d1d8?share=post_link)
+> >- [Бустичек 21.07.2026](https://boosty.to/mrfrenkie/posts/a873b4ad-89ba-4591-9b7f-6bec16e884e0)
+> >- [Слушаю ваши треки 16.08.2026](https://boosty.to/mrfrenkie/posts/a5b678c8-9837-4756-b132-66e07ae99716)
 > >
 > >
 > </details>
@@ -456,7 +457,7 @@
 > >- [EDM'er - EDM патч из любого пресета](https://boosty.to/mrfrenkie/posts/53bfcf45-286e-430b-b03d-5333238ad7f7)
 > >- [Multipass Hyper OTT](https://boosty.to/mrfrenkie/posts/4b8b447d-95ba-4cf1-a145-058972f09a70)
 > >- [Жиры и углеводы для ваших тембров](https://boosty.to/mrfrenkie/posts/f1be49cc-23c2-451a-bca3-f7c61291893c)
-> >- 🆕[Multipass Hyper OTT](https://boosty.to/mrfrenkie/posts/4b8b447d-95ba-4cf1-a145-058972f09a70?share=post_link)
+> >- [Multipass Hyper OTT](https://boosty.to/mrfrenkie/posts/4b8b447d-95ba-4cf1-a145-058972f09a70?share=post_link)
 > >
 > >
 > </details>
@@ -646,6 +647,17 @@
 > >- [Xfer Serum 2. Всё, что нужно знать - YouTube](https://www.youtube.com/live/A1HcE1wtAG8?si=lW25tacp1B9SfF06)
 > >- [Ещё о Serum 2 - YouTube](https://youtu.be/BEAqy7xLwBM?si=b7fppc505Y3VwqZw)
 > >
+> >
+> </details>
+
+> ## 👨‍💻Coding
+>
+> <details>
+> <summary>...</summary>
+>
+>
+> >### Frenkie Modular
+> >- 🆕[Показываю свой модульный синтезатор. Делюсь планами](https://boosty.to/mrfrenkie/posts/802b5e41-e053-4d75-b3c1-dad5878d2f3d)
 > >
 > </details>
 
