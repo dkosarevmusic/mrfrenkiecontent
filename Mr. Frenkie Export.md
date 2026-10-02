@@ -1,9 +1,9 @@
-# 🎛️ 🆕Music Sound-Design
+# 🎛️ Music Sound-Design
 
 <details>
 <summary>...</summary>
 
-> ## 🥁 🆕Drum Synthesis
+> ## 🥁 Drum Synthesis
 >
 > <details>
 > <summary>...</summary>
@@ -19,11 +19,11 @@
 > 
 > 
 > 
-> >### 🆕Videos
+> >### Videos
 > >
 > >
 > >
-> > >#### 🆕Kick
+> > >#### Kick
 > > >
 > > > >##### Common
 > > > >- [Тот самый Kick клик](https://boosty.to/mrfrenkie/posts/f351797e-5c14-4f10-bf29-b005f8b0145f)
@@ -46,9 +46,9 @@
 > > > >- [House Music Kick Клик + Serum Пресет](https://boosty.to/mrfrenkie/posts/33983cf1-2dba-4c3b-897a-84a13efb949e)
 > > > >- [House Kick (909 Style)](https://boosty.to/mrfrenkie/posts/54ce1bad-cd17-4dea-ab0a-ae9859b7073c)
 > > > 
-> > > >##### 🆕Drum and Bass
+> > > >##### Drum and Bass
 > > > >- [Синтез Kick для Drum And Bass](https://boosty.to/mrfrenkie/posts/f1a935f0-2b60-4aab-8a77-7f3f486cc096)
-> > > >- [🆕Тряпки для ударки](https://boosty.to/mrfrenkie/posts/bf018468-78b3-4cb4-b306-6f0818334156)
+> > > >- [Тряпки для ударки](https://boosty.to/mrfrenkie/posts/bf018468-78b3-4cb4-b306-6f0818334156)
 > > 
 > > 
 > > 
@@ -181,7 +181,7 @@
 
 </details>
 
-# 🎶 🆕Arrangement and Genre-Specific Sound-Design
+# 🆕🎶 Arrangement and Genre-Specific Sound-Design
 
 <details>
 <summary>...</summary>
@@ -207,13 +207,15 @@
 > >
 > </details>
 
-> ## 🎼 Music Theory
+> ## 🆕🎼 Music Theory
 >
 > <details>
 > <summary>...</summary>
 >
 > >### Harmony
 > >- [Моя база по гармонии](https://boosty.to/mrfrenkie/posts/3d0a90be-dd17-4ea0-bb74-d66c824e8d0b)
+> >- 🆕[Аккорды ft. Алексей Разумов](https://boosty.to/mrfrenkie/posts/42526338-7974-4825-b9e8-76c1e39f0fd9?share=post_link)
+> >- 🆕[Ещё разговоры об аккордах ](https://boosty.to/mrfrenkie/posts/79901967-e236-46c1-aeb0-7711af849e05?share=post_link)
 > >
 > >
 > </details>
@@ -357,13 +359,13 @@
 > >
 > </details>
 
-> ## 🎧 🆕Subscribers Music
+> ## 🆕🎧 Subscribers Music
 >
 > <details>
 > <summary>...</summary>
 >
 >
-> >### 🆕Democheck
+> >### Democheck
 > >- [Разбор ваших треков. Jan 16 2023](https://boosty.to/mrfrenkie/posts/2fed3475-b9f1-45ac-95f1-f08b6975ea9d)
 > >- [Критика музыки. Запись. Mar 16 2023](https://boosty.to/mrfrenkie/posts/121581ee-a1d6-4e8a-802e-6ffdbc804cd3)
 > >- [Слушаю ваши треки в прямом эфире. May 16 2023](https://boosty.to/mrfrenkie/posts/5e12857c-ae5a-4c16-8729-fd76b63ae1a7)
@@ -395,7 +397,8 @@
 > >- [Бустичек 16.05.2026](https://boosty.to/mrfrenkie/posts/c031c575-7900-4a11-a979-64e3898be552?share=post_link)
 > >- [Бустичек 20.06.2026](https://boosty.to/mrfrenkie/posts/45876ad8-37a5-4801-806e-bc28eef6d1d8?share=post_link)
 > >- [Бустичек 21.07.2026](https://boosty.to/mrfrenkie/posts/a873b4ad-89ba-4591-9b7f-6bec16e884e0)
-> >- 🆕[Слушаю ваши треки 16.08.2026](https://boosty.to/mrfrenkie/posts/a5b678c8-9837-4756-b132-66e07ae99716)
+> >- [Слушаю ваши треки 16.08.2026](https://boosty.to/mrfrenkie/posts/a5b678c8-9837-4756-b132-66e07ae99716)
+> >- 🆕[Boostycheck 13.09.2026](https://boosty.to/mrfrenkie/posts/b0a95403-e6b3-4aa9-ad19-221d14a22ac1?share=post_link)
 > >
 > >
 > </details>
@@ -566,7 +569,7 @@
 
 </details>
 
-# 🖥️ 🆕Software
+# 🖥️ Software
 
 <details>
 <summary>...</summary>
@@ -650,14 +653,14 @@
 > >
 > </details>
 
-> ## 👨‍💻🆕Coding
+> ## 👨‍💻Coding
 >
 > <details>
 > <summary>...</summary>
 >
 >
 > >### Frenkie Modular
-> >- 🆕[Показываю свой модульный синтезатор. Делюсь планами](https://boosty.to/mrfrenkie/posts/802b5e41-e053-4d75-b3c1-dad5878d2f3d)
+> >- [Показываю свой модульный синтезатор. Делюсь планами](https://boosty.to/mrfrenkie/posts/802b5e41-e053-4d75-b3c1-dad5878d2f3d)
 > >
 > </details>
 
