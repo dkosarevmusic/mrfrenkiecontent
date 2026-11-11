@@ -2,7 +2,7 @@
 
 Запуск:  python tools/find_new.py                 # за последние 45 дней (служебные посты скрыты; --show-service — показать)
          python tools/find_new.py --since 2026-10-01
-         python tools/find_new.py --all           # весь Boosty + первые ~30 видео и стримов YouTube
+         python tools/find_new.py --all           # весь Boosty и все видео и стримы YouTube
 Трекер:  ~/.claude/machine.json -> obsidianVault + "Life Manager/MDs/MrFrenkie Content.md" (или --tracker PATH).
 Ничего не меняет: только печатает список. Без входа: Boosty отдаёт и платные посты (название, дата, ссылка).
 """
@@ -52,29 +52,60 @@ def boosty_posts(since):
 
 
 def yt_tab(tab):
+    """Все ролики вкладки канала: первая порция со страницы, остальные — догрузкой, как при прокрутке."""
     html = get(f'https://www.youtube.com/channel/{YT_CHANNEL}/{tab}?hl=ru')
     m = re.search(r'var ytInitialData = (\{.*?\});</script>', html, re.S)
-    if not m:
-        raise RuntimeError(f'YouTube /{tab}: страница не разобралась (ytInitialData не найден)')
+    ver = re.search(r'"INNERTUBE_CLIENT_VERSION":"([^"]+)"', html)
+    vis = re.search(r'"VISITOR_DATA":"([^"]+)"', html)
+    if not (m and ver and vis):
+        raise RuntimeError(f'YouTube /{tab}: страница не разобралась (нет ytInitialData или версии клиента)')
     out = []
 
-    def walk(v):
-        if isinstance(v, dict):
-            if 'richItemRenderer' in v:
-                c = v['richItemRenderer'].get('content', {})
-                if 'lockupViewModel' in c:
-                    lk = c['lockupViewModel']
-                    out.append((lk.get('contentId'), lk.get('metadata', {}).get('lockupMetadataViewModel', {}).get('title', {}).get('content')))
-                elif 'videoRenderer' in c:
-                    vr = c['videoRenderer']
-                    out.append((vr['videoId'], vr['title']['runs'][0]['text']))
-            for x in v.values():
-                walk(x)
-        elif isinstance(v, list):
-            for x in v:
-                walk(x)
-    walk(json.loads(m.group(1)))
-    return [x for x in out if x[0]]
+    def grid(obj):
+        """Ролики и токен продолжения из той же сетки (у других блоков страницы свои токены)."""
+        token = [None]
+
+        def walk(v):
+            if isinstance(v, dict):
+                for x in v.values():
+                    walk(x)
+            elif isinstance(v, list):
+                if any(isinstance(x, dict) and 'richItemRenderer' in x for x in v):
+                    for x in v:
+                        if not isinstance(x, dict):
+                            continue
+                        if 'richItemRenderer' in x:
+                            c = x['richItemRenderer'].get('content', {})
+                            if 'lockupViewModel' in c:
+                                lk = c['lockupViewModel']
+                                out.append((lk.get('contentId'), lk.get('metadata', {}).get('lockupMetadataViewModel', {}).get('title', {}).get('content')))
+                            elif 'videoRenderer' in c:
+                                vr = c['videoRenderer']
+                                out.append((vr['videoId'], vr['title']['runs'][0]['text']))
+                        elif 'continuationItemRenderer' in x:
+                            token[0] = x['continuationItemRenderer'].get('continuationEndpoint', {}).get('continuationCommand', {}).get('token')
+                for x in v:
+                    walk(x)
+        walk(obj)
+        return token[0]
+
+    token = grid(json.loads(m.group(1)))
+    pages = 1
+    while token and pages < 100:
+        body = json.dumps({'context': {'client': {'clientName': 'WEB', 'clientVersion': ver.group(1), 'hl': 'ru',
+                                                  'visitorData': vis.group(1)}}, 'continuation': token}).encode()
+        req = urllib.request.Request('https://www.youtube.com/youtubei/v1/browse?prettyPrint=false', data=body,
+                                     headers={**HEADERS, 'Content-Type': 'application/json', 'X-Youtube-Client-Name': '1',
+                                              'X-Youtube-Client-Version': ver.group(1), 'X-Goog-Visitor-Id': vis.group(1)})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            token = grid(json.loads(r.read()))
+        pages += 1
+    seen, uniq = set(), []
+    for vid, title in out:
+        if vid and vid not in seen:
+            seen.add(vid)
+            uniq.append((vid, title))
+    return uniq
 
 
 def yt_details(vid):
@@ -140,7 +171,7 @@ def main():
             items.append({'when': when, 'src': 'YouTube', 'kind': kind, 'title': t or title,
                           'url': f'https://youtu.be/{vid}', 'service': False})
             added += 1
-        print(f'YouTube /{tab}: на странице {len(lst)}, нет в трекере {len(new)}, из них в периоде {added}')
+        print(f'YouTube /{tab}: всего {len(lst)}, нет в трекере {len(new)}, из них в периоде {added}')
 
     # одно и то же видео на обеих площадках: похожее название, разница до 3 дней
     for y in (i for i in items if i['src'] == 'YouTube'):
