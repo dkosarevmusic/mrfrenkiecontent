@@ -1,6 +1,6 @@
 """Что нового у Mr. Frenkie: свежие посты Boosty и видео/стримы YouTube, которых ещё нет в трекере.
 
-Запуск:  python tools/find_new.py                 # за последние 45 дней
+Запуск:  python tools/find_new.py                 # за последние 45 дней (служебные посты скрыты; --show-service — показать)
          python tools/find_new.py --since 2026-10-01
          python tools/find_new.py --all           # весь Boosty + первые ~30 видео и стримов YouTube
 Трекер:  ~/.claude/machine.json -> obsidianVault + "Life Manager/MDs/MrFrenkie Content.md" (или --tracker PATH).
@@ -105,6 +105,7 @@ def main():
     ap.add_argument('--since', help='YYYY-MM-DD, по Москве')
     ap.add_argument('--all', action='store_true')
     ap.add_argument('--tracker')
+    ap.add_argument('--show-service', action='store_true', help='показать и служебные посты (сборы, встречи, объявления)')
     a = ap.parse_args()
     since = None if a.all else (dt.datetime.fromisoformat(a.since).replace(tzinfo=MSK) if a.since
                                 else dt.datetime.now(MSK) - dt.timedelta(days=45))
@@ -148,8 +149,13 @@ def main():
             if close and difflib.SequenceMatcher(None, norm(y['title']), norm(b['title'])).ratio() > 0.6:
                 y['pair'] = b['title']
 
+    # служебные посты не добавляются и не показываются (решение Дмитрия, 2026-11-11); список — по --show-service
+    n_service = sum(i['service'] for i in items)
+    if not a.show_service:
+        items = [i for i in items if not i['service']]
     items.sort(key=lambda i: i['when'] or dt.datetime.min.replace(tzinfo=MSK))
-    print(f'\nНовых: {len(items)} (служебных постов Boosty: {sum(i["service"] for i in items)})\n')
+    hidden = f' (скрыто служебных постов Boosty: {n_service})' if n_service and not a.show_service else ''
+    print(f'\nНовых: {len(items)}{hidden}\n')
     for n, i in enumerate(items, 1):
         when = f'{i["when"]:%d.%m.%Y %H:%M}' if i['when'] else 'дата ?'
         flag = '  [служебный?]' if i['service'] else ''
