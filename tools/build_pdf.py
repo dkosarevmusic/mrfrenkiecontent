@@ -1,7 +1,9 @@
-"""Сборка PDF-каталога: трекер Obsidian -> HTML по макету design/mockup.html -> PDF через headless Edge.
+"""Сборка каталога: трекер Obsidian -> HTML по макету design/mockup.html -> PDF через headless Edge
++ веб-версия docs/index.html (та же вёрстка; в ней работают переходы по разделам и на Android,
+где просмотрщики PDF внутренние ссылки не выполняют; внешние ссылки открываются в новой вкладке).
 
-Запуск:  python tools/build_pdf.py            # собрать docs/mr-frenkie-content.pdf и проверить
-         python tools/build_pdf.py --html     # только HTML (design/out/catalog.html), без печати
+Запуск:  python tools/build_pdf.py            # собрать docs/mr-frenkie-content.pdf + docs/index.html и проверить
+         python tools/build_pdf.py --html     # только HTML для печати (design/out/catalog.html)
 Трекер только читается. Стили берутся из <style> макета, шрифты — design/fonts (интернет не нужен).
 Разбивку на листы A4, номера страниц оглавления и отчёт для проверок делает JS в самой странице.
 Даты для периода «Что нового» — tools/dates.json (нет даты новинки -> сначала python tools/dates.py).
@@ -13,6 +15,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 MOCKUP = ROOT / 'design' / 'mockup.html'
 OUT_HTML = ROOT / 'design' / 'out' / 'catalog.html'
 OUT_PDF = ROOT / 'docs' / 'mr-frenkie-content.pdf'
+OUT_WEB = ROOT / 'docs' / 'index.html'
+FONTS = ROOT / 'design' / 'fonts'
 DATES = ROOT / 'tools' / 'dates.json'
 MSK = dt.timezone(dt.timedelta(hours=3))
 
@@ -395,6 +399,11 @@ EXTRA_CSS = '''
 .list .note { color: var(--muted); font-size: 8.8px; }
 .page.last { break-after: auto; }
 #src, #report { display: none; }
+/* веб-версия: телефон не раздувает мелкий текст; кнопка PDF на обложке */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+.pdf-btn { position: absolute; right: 18mm; top: 20mm; z-index: 2; font: 500 9px Inter; letter-spacing: .1em; text-transform: uppercase;
+  padding: 7px 13px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); color: var(--text); }
+@media print { .pdf-btn { display: none; } }
 '''
 
 PAGINATE_JS = r'''
@@ -536,10 +545,12 @@ PAGINATE_JS = r'''
 '''
 
 
-def build_html(sections, dates, today):
+def build_html(sections, dates, today, web=False):
     assign_ids(sections)
     style = re.search(r'<style>(.*?)</style>', MOCKUP.read_text(encoding='utf-8'), re.S).group(1)
-    style = style.replace('url("fonts/', 'url("../fonts/')
+    if not web:   # печатный HTML лежит в design/out, веб-версия — рядом со своей папкой fonts
+        style = style.replace('url("fonts/', 'url("../fonts/')
+    pdf_btn = f'<a class="pdf-btn" href="{OUT_PDF.name}" download>Скачать PDF ↓</a>' if web else ''
 
     counts = [len([it for m in s.modules for it in m.all_items()]) for s in sections]
     items = [it for s in sections for m in s.modules for it in m.all_items()]
@@ -551,7 +562,7 @@ def build_html(sections, dates, today):
     cover_secs = ''.join(f'<li style="color:var(--c{i})"><a href="#{s.id}"><b>{i:02d}</b>{esc(SECTIONS[i - 1][1])}</a></li>'
                          for i, s in enumerate(sections, 1))
     cover = f'''<section class="page cover">
-  <div class="eyebrow">Boosty + YouTube</div>
+  <div class="eyebrow">Boosty + YouTube</div>{pdf_btn}
   <h1>Mr.<span>Frenkie</span></h1>
   <div class="subtitle">Все видео</div>
   <ul class="sections">{cover_secs}</ul>
@@ -605,11 +616,11 @@ def build_html(sections, dates, today):
     # подгруппам — имя для шапки продолжения
     srcs = re.sub(r'<div class="sub"><h5>([^<]*?) <em>', lambda m: f'<div class="sub" data-name="{m.group(1)}"><h5>{m.group(1)} <em>', srcs)
 
-    return f'''<!doctype html>
+    page = f'''<!doctype html>
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="{"width=794" if web else "width=device-width, initial-scale=1"}">
 <title>Mr. Frenkie — все видео</title>
 <style>{style}{EXTRA_CSS}</style>
 </head>
@@ -626,6 +637,9 @@ def build_html(sections, dates, today):
 </body>
 </html>
 '''
+    if web:   # внешние ссылки — в новой вкладке
+        page = page.replace('href="http', 'target="_blank" rel="noopener" href="http')
+    return page
 
 
 # ---------- Edge ----------
@@ -648,18 +662,19 @@ def edge(args, profile):
     return subprocess.run(cmd, capture_output=True, timeout=180)
 
 
-def print_pdf(url, out, profile):
-    """Печать в PDF; отчёт разбивки — из console.log страницы (msedge.exe на Windows не пишет в stdout,
-    поэтому --dump-dom не годится; лог Edge кладёт в chrome_debug.log папки профиля)."""
+def render(url, out, profile, pdf=True):
+    """Печать в PDF (или снимок экрана для проверки веб-версии); возвращает отчёт разбивки из console.log
+    страницы (msedge.exe на Windows не пишет в stdout, поэтому --dump-dom не годится; лог Edge кладёт
+    в chrome_debug.log папки профиля)."""
     out.parent.mkdir(parents=True, exist_ok=True)
     before = out.stat().st_mtime if out.exists() else 0
     t0 = time.time()
-    edge(['--no-pdf-header-footer', f'--print-to-pdf={out}', url], profile)
+    edge((['--no-pdf-header-footer', f'--print-to-pdf={out}'] if pdf else [f'--screenshot={out}']) + [url], profile)
     # Edge дописывает файл уже после выхода команды: ждём новый файл с устоявшимся размером
     last = -1
     while True:
         if time.time() - t0 > 120:
-            raise SystemExit('PDF не появился за 2 минуты')
+            raise SystemExit(f'Edge не создал {out.name} за 2 минуты')
         if out.exists() and out.stat().st_mtime > before:
             size = out.stat().st_size
             if size == last and size > 0:
@@ -704,15 +719,11 @@ def direct_links(pdf):
 
 # ---------- проверки ----------
 
-def check(report, pdf, sections, raw_counts):
-    from pypdf import PdfReader
+def check_layout(report, n_items, n_rels):
+    """Проверки свёрстанной страницы по отчёту её JS (общие для печатной и веб-версии)."""
     errs = []
-    items = [it for s in sections for m in s.modules for it in m.all_items()]
-    n_rels = sum(len(it['rels']) for it in items)
-    if (len(items), n_rels) != raw_counts:
-        errs.append(f'разбор трекера: {len(items)}+{n_rels} ссылок, прямой счёт {raw_counts[0]}+{raw_counts[1]}')
-    if report['rows'] != len(items) or report['rels'] != n_rels:
-        errs.append(f'в вёрстке строк {report["rows"]}+{report["rels"]}, в трекере {len(items)}+{n_rels}')
+    if report['rows'] != n_items or report['rels'] != n_rels:
+        errs.append(f'в вёрстке строк {report["rows"]}+{report["rels"]}, в трекере {n_items}+{n_rels}')
     if report['leftover']:
         errs.append(f'не разложено по листам: {report["leftover"]} элементов')
     errs += report['errors']
@@ -726,6 +737,16 @@ def check(report, pdf, sections, raw_counts):
     bad_w = [w for w in report['wires'] if abs(w['delta']) > 0.6 or not w['last']]
     if bad_w:
         errs.append(f'провода не у рамки: {bad_w}')
+    return errs
+
+
+def check(report, pdf, sections, raw_counts):
+    from pypdf import PdfReader
+    items = [it for s in sections for m in s.modules for it in m.all_items()]
+    n_rels = sum(len(it['rels']) for it in items)
+    errs = check_layout(report, len(items), n_rels)
+    if (len(items), n_rels) != raw_counts:
+        errs.append(f'разбор трекера: {len(items)}+{n_rels} ссылок, прямой счёт {raw_counts[0]}+{raw_counts[1]}')
 
     rd = PdfReader(str(pdf))
     if len(rd.pages) != len(report['pages']):
@@ -781,17 +802,36 @@ def main():
                          + '\nПоправь SECTIONS в tools/build_pdf.py')
     dates = json.loads(DATES.read_text(encoding='utf-8'))
     OUT_HTML.parent.mkdir(parents=True, exist_ok=True)
-    OUT_HTML.write_text(build_html(sections, dates, dt.datetime.now(MSK).date()), encoding='utf-8')
+    today = dt.datetime.now(MSK).date()
+    OUT_HTML.write_text(build_html(sections, dates, today), encoding='utf-8')
     print('HTML:', OUT_HTML.relative_to(ROOT))
     if only_html:
         return 0
     url = OUT_HTML.as_uri()
     # фоновый процесс Edge иногда держит файлы профиля после выхода — не падать на уборке
     with tempfile.TemporaryDirectory(prefix='edge-pdf-', ignore_cleanup_errors=True) as profile:
-        report = print_pdf(url, OUT_PDF, profile)
+        report = render(url, OUT_PDF, profile)
     direct_links(OUT_PDF)
     print('PDF: ', OUT_PDF.relative_to(ROOT))
     errs, st = check(report, OUT_PDF, sections, raw_link_count(text))
+
+    # веб-версия: та же страница рядом с PDF и шрифтами; проверяется тем же отчётом
+    web = build_html(sections, dates, today, web=True)
+    OUT_WEB.write_text(web, encoding='utf-8')
+    (OUT_WEB.parent / 'fonts').mkdir(exist_ok=True)
+    for f in FONTS.iterdir():
+        dst = OUT_WEB.parent / 'fonts' / f.name
+        if not dst.exists() or dst.read_bytes() != f.read_bytes():
+            shutil.copy2(f, dst)
+    with tempfile.TemporaryDirectory(prefix='edge-web-', ignore_cleanup_errors=True) as profile:
+        wrep = render(OUT_WEB.as_uri(), pathlib.Path(profile) / 'web.png', profile, pdf=False)
+    print('Веб: ', OUT_WEB.relative_to(ROOT))
+    errs += ['веб-версия: ' + e for e in check_layout(wrep, st['rows'], st['rels'])]
+    n_blank, n_ext = web.count('target="_blank"'), web.count('href="http')
+    if n_blank != n_ext or n_ext != st['uris']:
+        errs.append(f'веб-версия: внешних ссылок {n_ext}, из них в новой вкладке {n_blank}, в PDF {st["uris"]}')
+    if len(wrep['pages']) != st['pages']:
+        errs.append(f'веб-версия: листов {len(wrep["pages"])}, в PDF {st["pages"]}')
     print(f"Листов {st['pages']}; строк {st['rows']} (Boosty {st['boosty']}, YouTube {st['rows'] - st['boosty']}) + ↳ {st['rels']}; "
           f"новых {st['new']}; внешних ссылок {st['uris']}, внутренних {st['internal']}; самый высокий лист {st['max_mm']} мм; "
           f"переходов провода {st['wires']}")

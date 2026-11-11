@@ -3,4 +3,6 @@
 Содержит ссылки на контент, который лежит на [Boosty](https://boosty.to/mrfrenkie) по подписке.
 Также есть ссылки на ютуб, но все самое вкусное не там.
 
-[СМОТРЕТЬ СПИСОК](https://dkosarevmusic.github.io/mrfrenkiecontent/mr-frenkie-content.pdf)
+[СМОТРЕТЬ СПИСОК](https://dkosarevmusic.github.io/mrfrenkiecontent/)
+
+[Скачать PDF](https://dkosarevmusic.github.io/mrfrenkiecontent/mr-frenkie-content.pdf)
