@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mr. Frenkie — макет PDF</title>
+<style>
+/* шрифты лежат в репо (design/fonts), интернет при сборке не нужен */
+@font-face { font-family: Unbounded; src: url("fonts/Unbounded-VariableFont.ttf") format("truetype"); font-weight: 200 900; }
+@font-face { font-family: Montserrat; src: url("fonts/Montserrat-VariableFont.ttf") format("truetype"); font-weight: 100 900; }
+@font-face { font-family: Inter; src: url("fonts/Inter-VariableFont.ttf") format("truetype"); font-weight: 100 900; }
+/* Палитра: тёмная база + акценты одной яркости и насыщенности, разные оттенки (по разделу) */
+:root {
+  --bg: #0d0e10;
+  --panel: #16181b;
+  --panel-2: #1d2024;
+  --line: #2a2e34;
+  --text: #eceef1;
+  --muted: #8b919a;
+  --faint: #4a5058;
+  --c1: oklch(0.76 0.13 195);  /* 01 Sound Design — бирюза */
+  --c2: oklch(0.76 0.13 55);   /* 02 Arrangement — оранжевый */
+  --c3: oklch(0.76 0.13 150);  /* 03 Mixing — зелёный */
+  --c4: oklch(0.76 0.13 95);   /* 04 Q&A — жёлтый */
+  --c5: oklch(0.76 0.13 290);  /* 05 Software — фиолетовый */
+  --new: oklch(0.70 0.19 15);  /* метка NEW */
+  --boosty: oklch(0.76 0.15 48); /* оттенок Boosty, яркость как у палитры */
+  --yt: oklch(0.68 0.20 25);     /* оттенок YouTube */
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 0; }
+html { background: #050506; }
+body { font-family: Inter, system-ui, sans-serif; color: var(--text); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; text-decoration: none; }
+
+.page {
+  width: 210mm; height: 297mm; margin: 24px auto; background: var(--bg);
+  position: relative; overflow: hidden; padding: 18mm 16mm 16mm 18mm;
+}
+/* раздел, который не влез на лист, перетекает на следующий с теми же отступами */
+.page.flow { height: auto; min-height: 297mm; padding-bottom: 22mm; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+@media print { html, body { background: var(--bg); } .page { margin: 0; break-after: page; } .page.flow .foot { display: none; } }
+
+/* ---------- Обложка ---------- */
+.cover { padding: 22mm 18mm; }
+.cover .eyebrow { font: 400 11px/1 Montserrat; letter-spacing: .35em; text-transform: uppercase; color: var(--muted); }
+.cover h1 { font: 900 66px/0.95 Unbounded; letter-spacing: -0.01em; color: var(--text); margin-top: 14mm; text-transform: uppercase; }
+.cover h1 span { display: block; color: var(--c1); }
+.cover .subtitle { font: 400 22px/1 Montserrat; letter-spacing: .32em; text-transform: uppercase; color: var(--text); margin-top: 7mm; }
+.cover .sections { margin-top: 15mm; list-style: none; }
+.cover .sections li { font: 400 19px/1.5 Montserrat; letter-spacing: .06em; text-transform: uppercase; }
+.cover .sections li b { display: inline-block; width: 9mm; font: 500 11px Unbounded; font-variant-numeric: tabular-nums; color: var(--faint); letter-spacing: 0; vertical-align: 3px; }
+.cover .stats { position: absolute; left: 18mm; bottom: 22mm; display: flex; gap: 12mm; }
+.stat .n { font: 800 30px/1 Unbounded; }
+.stat .l { font: 400 9.5px/1.3 Inter; color: var(--muted); text-transform: uppercase; letter-spacing: .12em; margin-top: 6px; }
+.cover .date { position: absolute; right: 18mm; bottom: 22mm; font: 400 10px Inter; color: var(--muted); text-align: right; line-height: 1.6; }
+.cables { position: absolute; right: -10mm; top: 70mm; width: 130mm; height: 228mm; opacity: .9; }
+/* подложки, чтобы провода не мешали читать */
+.cover .stats, .cover .date { z-index: 1; background: var(--bg); box-shadow: 0 0 6mm 4mm var(--bg); border-radius: 4mm; }
+
+/* ---------- Общие элементы страниц ---------- */
+.tab { position: absolute; right: 0; top: 0; bottom: 0; width: 5mm; display: flex; flex-direction: column; }
+.tab i { flex: 1; background: var(--line); opacity: .35; }
+.foot { position: absolute; left: 18mm; right: 16mm; bottom: 9mm; display: flex; justify-content: flex-end; gap: 6mm; font: 400 8.5px Inter; color: var(--faint); letter-spacing: .08em; text-transform: uppercase; }
+.h-page { font: 800 26px/1 Unbounded; text-transform: uppercase; letter-spacing: -0.005em; }
+.kicker { font: 400 10px/1 Montserrat; letter-spacing: .3em; text-transform: uppercase; color: var(--muted); margin-bottom: 5mm; }
+.new { display: inline-block; font: 600 7.5px/1 Inter; letter-spacing: .1em; color: var(--bg); background: var(--new); padding: 3px 5px 2.5px; border-radius: 3px; vertical-align: 1px; }
+
+/* бейджи площадок: в одну строку с текстом, цвет площадки */
+.src { display: inline-flex; align-items: center; gap: 4px; flex: none; align-self: center;
+  font: 600 7.2px/1 Inter; letter-spacing: .04em; padding: 3px 6px 3px 5px; border-radius: 999px; white-space: nowrap; }
+.src svg { width: 7px; height: 7px; }
+.src.b  { color: var(--boosty); background: color-mix(in oklch, var(--boosty) 15%, transparent); }
+.src.yt { color: var(--yt);     background: color-mix(in oklch, var(--yt) 15%, transparent); }
+.srcs { display: inline-flex; gap: 4px; flex: none; }
+
+/* ---------- Оглавление + Что нового ---------- */
+.whatsnew { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 6mm 7mm; margin-top: 8mm; position: relative; }
+.whatsnew::before { content: ""; position: absolute; left: 0; top: 10px; bottom: 10px; width: 3px; border-radius: 2px; background: var(--new); }
+.whatsnew h3 { font: 500 12px Unbounded; letter-spacing: .02em; display: flex; align-items: center; gap: 8px; }
+.whatsnew h3 small { font: 400 9px Inter; color: var(--muted); margin-left: auto; letter-spacing: .06em; text-transform: uppercase; }
+.whatsnew ul { list-style: none; margin-top: 4mm; }
+.whatsnew li { display: flex; align-items: center; gap: 10px; padding: 2.4mm 0; border-top: 1px solid var(--line); font-size: 10.5px; }
+.whatsnew li > a:not(.src):not(.path) { flex: 1; }
+.whatsnew li a.path { flex: none; font-size: 8.5px; letter-spacing: .06em; text-transform: uppercase; margin-right: 8px; }
+
+.bar { display: flex; height: 6px; border-radius: 3px; overflow: hidden; margin: 9mm 0 2mm; gap: 2px; }
+.legend { display: flex; flex-wrap: wrap; gap: 1.6mm 6mm; font: 400 9px Inter; color: var(--muted); }
+.legend a { display: inline-flex; align-items: center; gap: 5px; }
+.legend i { width: 7px; height: 7px; border-radius: 50%; }
+.legend b { font-weight: 600; color: var(--text); }
+
+/* оглавление: раздел с русским подзаголовком, подразделы в две колонки, точки до номера страницы */
+.toc { display: grid; gap: 2.4mm; }
+.toc > li { position: relative; padding: 3.4mm 5mm 3.4mm 6mm; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+.toc > li::before { content: ""; position: absolute; left: 0; top: 8px; bottom: 8px; width: 3px; border-radius: 2px; background: currentColor; }
+.toc a.row { display: flex; align-items: baseline; gap: 3mm; }
+.toc .num { font: 500 11px Unbounded; width: 8mm; flex: none; }
+.toc .t { font: 500 14px Unbounded; letter-spacing: .01em; }
+.toc .t small { display: block; font: 400 9px Inter; color: var(--muted); letter-spacing: .02em; margin-top: 1.3mm; }
+.dots { flex: 1; min-width: 6mm; border-bottom: 1px dotted var(--faint); transform: translateY(-3px); }
+.toc .pg { font: 500 11px Unbounded; }
+.toc .subs { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3mm 9mm; margin: 2.4mm 0 0 11mm; }
+.toc .subs a { display: flex; align-items: baseline; gap: 2mm; font-size: 9.5px; color: var(--text); }
+.toc .subs em { font-style: normal; font-size: 8.5px; color: var(--faint); }
+.toc .subs b { font: 500 9px Unbounded; color: var(--muted); }
+.toc .new { font-size: 6.5px; padding: 2.5px 4px 2px; }
+/* NEW по центру заглавных букв соседнего текста (замерено в Edge с настоящими шрифтами) */
+.toc .t .new { vertical-align: 3.5px; }
+.toc .subs .new { position: relative; top: -1.5px; }
+.list .new, .chips .new, .unit > h4 .new { position: relative; top: -0.5px; }
+
+/* обложка: как пользоваться */
+.howto { position: relative; z-index: 1; width: 104mm; margin-top: 13mm; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 5mm 6mm 4.5mm; }
+.howto h3 { font: 500 11px Unbounded; margin-bottom: 3mm; }
+.howto ul { list-style: none; display: grid; gap: 2.2mm; }
+.howto li { display: grid; grid-template-columns: 26mm 1fr; align-items: center; gap: 3mm; font-size: 9px; line-height: 1.4; color: var(--muted); }
+.howto li > span:first-child { display: flex; gap: 4px; flex-wrap: wrap; }
+.howto .arrow { font-size: 12px; color: var(--c1); }
+
+/* метка типа материала */
+.tag { display: inline-flex; align-items: center; flex: none; align-self: center; font: 600 7.2px/1 Inter; letter-spacing: .04em;
+  padding: 3px 6px; border-radius: 999px; color: #c9ccd1; background: rgba(255,255,255,.06); border: 1px solid var(--line); }
+
+/* связанная ссылка ↳ под основной */
+.list li:has(+ li.rel) { border-bottom: 0; }
+.list li.rel { padding-top: 0; padding-left: 4.5mm; font-size: 9px; color: var(--muted); }
+.list li.rel .arrow { flex: none; width: 4mm; margin-left: -4.5mm; color: var(--acc); }
+
+/* серия: номер части слева */
+.unit > h4 .tag { margin-left: 2px; }
+.list .ep { flex: none; width: 7mm; font: 600 8.5px Unbounded; color: var(--acc); }
+
+/* шапка раздела: плашки подразделов */
+.chips { display: flex; flex-wrap: wrap; gap: 2mm; margin-top: 4mm; }
+.chips a { display: inline-flex; align-items: center; gap: 5px; font: 500 8.5px Inter; padding: 3.5px 9px; border-radius: 999px;
+  border: 1px solid color-mix(in oklch, var(--acc) 40%, transparent); color: var(--text); }
+.chips a em { font-style: normal; color: var(--muted); }
+.chips .new { font-size: 6.5px; padding: 2.5px 4px 2px; }
+
+.toc { list-style: none; margin-top: 5mm; }
+
+/* ---------- Страница раздела ---------- */
+.sec-head { display: grid; grid-template-columns: auto 1fr; gap: 6mm; align-items: end; padding-bottom: 6mm; border-bottom: 1px solid var(--line); }
+.sec-num { font: 900 64px/0.8 Unbounded; color: transparent; -webkit-text-stroke: 1.5px var(--acc); }
+.sec-head .meta { font: 400 9.5px Inter; color: var(--muted); margin-top: 3mm; letter-spacing: .06em; text-transform: uppercase; }
+
+/* Уровень 1 — подраздел (##): модуль синта */
+.module { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; margin-top: 6mm; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.module > header { display: flex; align-items: center; gap: 9px; padding: 3.4mm 5mm; border-bottom: 1px solid var(--line); background: var(--panel-2); border-radius: 10px 10px 0 0; }
+.module > header .led { width: 9px; height: 9px; border-radius: 50%; background: var(--acc); box-shadow: 0 0 6px var(--acc); }
+.module > header h2 { font: 500 14px Unbounded; }
+.cnt { margin-left: auto; font: 400 8.5px Inter; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+.module > .body { padding: 1mm 5mm 4mm; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+/* на новом листе фон модуля начинается с отступом над содержимым */
+@media print { .module > .body { padding-top: 4mm; } .module > .body > .block:first-child { margin-top: 0; } }
+
+/* Уровень 2 — блок (Presets / Videos): порт + один провод вниз */
+.block { position: relative; display: flow-root; padding-left: 7mm; margin-top: 4mm; }
+.block::before { /* провод от порта вдоль блока */
+  content: ""; position: absolute; left: 1.6mm; top: 3.2mm; bottom: 1mm; width: 1.5px; border-radius: 1px;
+  background: linear-gradient(var(--acc), color-mix(in oklch, var(--acc) 15%, transparent)); }
+/* провод уходит на следующий лист: сплошной до края модуля, дальше пунктир до края листа */
+.block.cont-down::before { bottom: -4mm; border-radius: 0;
+  background: linear-gradient(var(--acc), color-mix(in oklch, var(--acc) 55%, transparent)); }
+.block.cont-down::after, .block.cont-up::after { content: ""; position: absolute; left: 1.6mm; height: 40mm;
+  border-left: 1.5px dashed color-mix(in oklch, var(--acc) 55%, transparent); }
+.block.cont-down::after { top: calc(100% + 4mm + 1px); }
+/* провод пришёл с прошлого листа: пунктир от края листа, сплошной от края модуля */
+.block.cont-up { margin-top: 0; }
+.block.cont-up::before { top: -4mm; border-radius: 0;
+  background: linear-gradient(color-mix(in oklch, var(--acc) 55%, transparent), color-mix(in oklch, var(--acc) 15%, transparent)); }
+.block.cont-up::after { bottom: calc(100% + 4mm + 1px); }
+.module.cont { margin-top: 0; }
+.module.cont > .body { padding-top: 4mm; }
+.unit > h4.cont-h { color: var(--muted); font-weight: 500; align-items: baseline; }
+.unit > h4.cont-h::before { align-self: center; }
+.unit > h4.cont-h span { font: 400 8px Inter; letter-spacing: .12em; text-transform: uppercase; color: var(--faint); }
+.block > h3 { display: flex; align-items: center; gap: 8px; font: 500 10px Unbounded; letter-spacing: .08em; text-transform: uppercase; color: var(--acc); margin-left: -7mm; }
+.block > h3::before { /* порт */
+  content: ""; width: 8px; height: 8px; border-radius: 50%; border: 2px solid var(--acc); background: var(--panel); flex: none; margin-left: .5mm; }
+
+/* Уровень 3 — группа (Kick / Snare): вложенная панель */
+.unit { background: var(--panel-2); border: 1px solid var(--line); border-radius: 7px; margin-top: 2.6mm; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.unit > h4 { break-after: avoid; display: flex; align-items: center; gap: 7px; padding: 2.2mm 3.5mm; border-bottom: 1px solid var(--line); font: 600 10.5px Inter; }
+.unit > h4::before { content: ""; width: 5px; height: 5px; border-radius: 1.5px; background: var(--acc); }
+.unit > .in { padding: 0.5mm 3.5mm 1.5mm; }
+
+/* Уровень 4 — подгруппа (Common / Rumble): тонкая подпись */
+/* дорожка: цветная полоса слева вдоль строк подгруппы */
+.sub { position: relative; margin: 2.8mm 0 1.2mm; padding-left: 3.4mm; }
+.sub:first-child { margin-top: 2mm; }
+.sub::before { content: ""; position: absolute; left: 0; top: 5.2mm; bottom: .8mm; width: 2px; border-radius: 1px;
+  background: color-mix(in oklch, var(--acc) 45%, transparent); }
+/* плашка с названием и числом видео */
+.sub h5 { break-after: avoid; display: inline-flex; align-items: center; gap: 6px; margin: 0 0 .8mm -3.4mm;
+  font: 600 8px/1 Inter; letter-spacing: .14em; text-transform: uppercase; color: var(--acc);
+  background: color-mix(in oklch, var(--acc) 13%, transparent); padding: 3px 7px 3px 6px; border-radius: 4px; }
+.sub h5 em { font-style: normal; font-weight: 500; letter-spacing: 0; color: color-mix(in oklch, var(--acc) 60%, var(--muted)); }
+
+/* Видео */
+.list { list-style: none; }
+.list li { break-inside: avoid; display: flex; gap: 8px; align-items: center; font-size: 9.8px; line-height: 1.3; padding: 1.05mm 0; border-bottom: 1px solid #222529; }
+.list li:last-child { border-bottom: 0; }
+.list li > a:not(.src) { flex: 1; }
+.block > .list { margin-top: 1mm; }
+</style>
+</head>
+<body>
+
+<!-- иконки площадок -->
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="i-yt" viewBox="0 0 10 10"><path d="M2 1.2 L9 5 L2 8.8 Z" fill="currentColor"/></symbol>
+  <symbol id="i-b" viewBox="0 0 10 10"><circle cx="5" cy="5" r="3.6" fill="currentColor"/></symbol>
+</svg>
+
+<!-- ============ 1. ОБЛОЖКА ============ -->
+<section class="page cover">
+  <div class="eyebrow">Boosty + YouTube</div>
+  <h1>Mr.<span>Frenkie</span></h1>
+  <div class="subtitle">Все видео</div>
+
+  <ul class="sections">
+    <li style="color:var(--c1)"><a href="#s01"><b>01</b>Sound Design</a></li>
+    <li style="color:var(--c2)"><a href="#s02"><b>02</b>Arrangement &amp; Genres</a></li>
+    <li style="color:var(--c3)"><a href="#s03"><b>03</b>Mixing &amp; Mastering</a></li>
+    <li style="color:var(--c4)"><a href="#s04"><b>04</b>Tips &amp; Q&amp;A</a></li>
+    <li style="color:var(--c5)"><a href="#s05"><b>05</b>Software</a></li>
+  </ul>
+
+  <div class="howto">
+    <h3>Как пользоваться</h3>
+    <ul>
+      <li><span>Названия</span>Все названия кликабельны — открывают видео или пост.</li>
+      <li><span><span class="src b"><svg><use href="#i-b"/></svg>Boosty</span></span>Пост по подписке на автора. Без подписки откроется только заголовок.</li>
+      <li><span><span class="src yt"><svg><use href="#i-yt"/></svg>YouTube</span></span>Открыт всем.</li>
+      <li><span><span class="tag">Пресет</span><span class="tag">Скрипт</span></span>Тип материала, если это не видео.</li>
+      <li><span><span class="new">NEW</span></span>Добавлено в последнем обновлении. У раздела — внутри есть новое.</li>
+      <li><span class="arrow">↳</span>Связанная ссылка: копия видео, проект, пресеты.</li>
+    </ul>
+  </div>
+
+  <svg class="cables" viewBox="0 0 400 700" fill="none" stroke-linecap="round">
+    <path d="M400 40 C 250 40, 260 200, 120 210 S -20 420, 40 560 S 90 660, 70 700" stroke="var(--c1)" stroke-width="3" opacity=".9"/>
+    <path d="M400 110 C 300 120, 330 260, 210 300 S 120 470, 170 580 S 200 670, 180 700" stroke="var(--c2)" stroke-width="3" opacity=".85"/>
+    <path d="M400 190 C 340 210, 360 330, 290 360 S 240 500, 280 600 S 280 680, 270 700" stroke="var(--c3)" stroke-width="3" opacity=".8"/>
+    <path d="M400 260 C 370 280, 330 300, 330 380 S 390 520, 350 620 S 340 690, 345 700" stroke="var(--c5)" stroke-width="3" opacity=".75"/>
+    <path d="M400 330 C 360 340, 250 330, 240 400 S 300 520, 230 640 S 220 690, 225 700" stroke="var(--new)" stroke-width="2" opacity=".7" stroke-dasharray="1 7"/>
+    <g fill="var(--bg)" stroke-width="2.5">
+      <circle cx="120" cy="210" r="6" stroke="var(--c1)"/><circle cx="210" cy="300" r="6" stroke="var(--c2)"/>
+      <circle cx="290" cy="360" r="6" stroke="var(--c3)"/><circle cx="330" cy="380" r="6" stroke="var(--c5)"/>
+    </g>
+  </svg>
+
+  <div class="stats">
+    <div class="stat"><div class="n">228</div><div class="l">материалов</div></div>
+    <div class="stat"><div class="n" style="color:var(--boosty)">163</div><div class="l">Boosty</div></div>
+    <div class="stat"><div class="n" style="color:var(--yt)">65</div><div class="l">YouTube</div></div>
+    <div class="stat"><div class="n" style="color:var(--new)">5</div><div class="l">новых</div></div>
+  </div>
+  <div class="date">Обновлено<br><span style="color:var(--text)">ноябрь 2026</span></div>
+</section>
+
+<!-- ============ 2. ЧТО НОВОГО + ОГЛАВЛЕНИЕ ============ -->
+<section class="page">
+  <div class="kicker">Mr. Frenkie · все видео</div>
+  <div class="h-page">Содержание</div>
+
+  <div class="whatsnew">
+    <h3><span class="new">NEW</span> Что нового <small>за октябрь — ноябрь 2026</small></h3>
+    <ul>
+      <li><a class="path" href="#u-snare" style="color:var(--c1)">Sound Design · Drum Synthesis · Snare</a><a href="https://boosty.to/mrfrenkie/posts/2657432b-716d-4284-8d41-394853690a59">Ghost Snare</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/2657432b-716d-4284-8d41-394853690a59"><svg><use href="#i-b"/></svg>Boosty</a></li>
+      <li><a class="path" href="#u-full-drums" style="color:var(--c1)">Sound Design · Drum Synthesis · Full Drums</a><a href="https://boosty.to/mrfrenkie/posts/92ba6083-1046-4d1f-b92c-667c15cab608">Финальный босс в накрутке ударки</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/92ba6083-1046-4d1f-b92c-667c15cab608"><svg><use href="#i-b"/></svg>Boosty</a></li>
+      <li><a class="path" href="#s02" style="color:var(--c2)">Arrangement · Subscribers Music · Democheck</a><a href="https://boosty.to/mrfrenkie/posts/e04f624b-46ee-47f5-888c-1906d523c822">Слушаю ваши треки 25.10.2026</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/e04f624b-46ee-47f5-888c-1906d523c822"><svg><use href="#i-b"/></svg>Boosty</a></li>
+      <li><a class="path" href="#s05" style="color:var(--c5)">Software · DAW · Reaper · Scripts</a><a href="https://boosty.to/mrfrenkie/posts/04c8893e-a25a-4a2d-97f1-92a633528499">Обновление виджета для Reaper</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/04c8893e-a25a-4a2d-97f1-92a633528499"><svg><use href="#i-b"/></svg>Boosty</a></li>
+      <li><a class="path" href="#s05" style="color:var(--c5)">Software · Coding · Frenkie Modular</a><a href="https://www.youtube.com/live/1womm3MtEZw">Я создал свой модульный синтезатор</a><a class="src yt" href="https://www.youtube.com/live/1womm3MtEZw"><svg><use href="#i-yt"/></svg>YouTube</a></li>
+    </ul>
+  </div>
+
+  <div class="bar">
+    <a href="#s01" style="flex:58;background:var(--c1)"></a><a href="#s02" style="flex:96;background:var(--c2)"></a><a href="#s03" style="flex:29;background:var(--c3)"></a><a href="#s04" style="flex:11;background:var(--c4)"></a><a href="#s05" style="flex:34;background:var(--c5)"></a>
+  </div>
+  <div class="legend">
+    <a href="#s01"><i style="background:var(--c1)"></i>Sound Design <b>58</b></a>
+    <a href="#s02"><i style="background:var(--c2)"></i>Arrangement &amp; Genres <b>96</b></a>
+    <a href="#s03"><i style="background:var(--c3)"></i>Mixing &amp; Mastering <b>29</b></a>
+    <a href="#s04"><i style="background:var(--c4)"></i>Tips &amp; Q&amp;A <b>11</b></a>
+    <a href="#s05"><i style="background:var(--c5)"></i>Software <b>34</b></a>
+  </div>
+
+  <ul class="toc">
+    <li style="color:var(--c1)"><a class="row" href="#s01"><span class="num">01</span><span class="t">Sound Design <span class="new">NEW</span><small>Синтез звука</small></span><i class="dots"></i><span class="pg">03</span></a>
+      <div class="subs"><a href="#m-drum-synthesis"><span>Drum Synthesis</span> <span class="new">NEW</span><em>29</em><i class="dots"></i><b>03</b></a><a href="#m-bass-synthesis"><span>Bass Synthesis</span><em>12</em><i class="dots"></i><b>04</b></a><a href="#s01"><span>Not Bass Synthesis</span><em>5</em><i class="dots"></i><b>05</b></a><a href="#s01"><span>Synth Techniques</span><em>12</em><i class="dots"></i><b>05</b></a></div></li>
+    <li style="color:var(--c2)"><a class="row" href="#s02"><span class="num">02</span><span class="t">Arrangement &amp; Genres <span class="new">NEW</span><small>Аранжировка, теория и жанры</small></span><i class="dots"></i><span class="pg">07</span></a>
+      <div class="subs"><a href="#s02"><span>Common</span><em>4</em><i class="dots"></i><b>07</b></a><a href="#s02"><span>Music Theory</span><em>3</em><i class="dots"></i><b>07</b></a><a href="#s02"><span>Genres</span><em>49</em><i class="dots"></i><b>07</b></a><a href="#s02"><span>Subscribers Music</span> <span class="new">NEW</span><em>34</em><i class="dots"></i><b>10</b></a><a href="#s02"><span>Frenkie Music</span><em>2</em><i class="dots"></i><b>11</b></a><a href="#s02"><span>Reference Music</span><em>4</em><i class="dots"></i><b>11</b></a></div></li>
+    <li style="color:var(--c3)"><a class="row" href="#s03"><span class="num">03</span><span class="t">Mixing &amp; Mastering<small>Сведение и мастеринг</small></span><i class="dots"></i><span class="pg">13</span></a>
+      <div class="subs"><a href="#s03"><span>Utilities</span><em>8</em><i class="dots"></i><b>13</b></a><a href="#s03"><span>Mix</span><em>10</em><i class="dots"></i><b>13</b></a><a href="#s03"><span>Master</span><em>11</em><i class="dots"></i><b>14</b></a></div></li>
+    <li style="color:var(--c4)"><a class="row" href="#s04"><span class="num">04</span><span class="t">Tips &amp; Q&amp;A<small>Советы и ответы на вопросы</small></span><i class="dots"></i><span class="pg">15</span></a>
+      <div class="subs"><a href="#s04"><span>Little bit of everything</span><em>11</em><i class="dots"></i><b>15</b></a></div></li>
+    <li style="color:var(--c5)"><a class="row" href="#s05"><span class="num">05</span><span class="t">Software <span class="new">NEW</span><small>Программы и плагины</small></span><i class="dots"></i><span class="pg">16</span></a>
+      <div class="subs"><a href="#s05"><span>DAW</span> <span class="new">NEW</span><em>26</em><i class="dots"></i><b>16</b></a><a href="#s05"><span>Plugins Review</span><em>6</em><i class="dots"></i><b>17</b></a><a href="#s05"><span>Coding</span> <span class="new">NEW</span><em>2</em><i class="dots"></i><b>17</b></a></div></li>
+  </ul>
+
+  <div class="foot"><span>Mr. Frenkie — все видео</span><span>02</span></div>
+</section>
+
+<!-- ============ 3. СТРАНИЦА РАЗДЕЛА ============ -->
+<section class="page" id="s01" style="--acc:var(--c1)">
+  <div class="tab"><i style="background:var(--c1);opacity:1"></i><i></i><i></i><i></i><i></i></div>
+
+  <div class="sec-head">
+    <div class="sec-num">01</div>
+    <div>
+      <div class="kicker" style="margin-bottom:3mm">Раздел</div>
+      <div class="h-page" style="color:var(--c1)">Sound Design</div>
+      <div class="meta">Синтез звука · 58 материалов · 2 новых</div>
+      <nav class="chips"><a href="#m-drum-synthesis">Drum Synthesis <em>29</em> <span class="new">NEW</span></a><a href="#m-bass-synthesis">Bass Synthesis <em>12</em></a><a href="#s01">Not Bass Synthesis <em>5</em></a><a href="#s01">Synth Techniques <em>12</em></a></nav>
+    </div>
+  </div>
+
+  <article class="module" id="m-drum-synthesis">
+    <header><span class="led"></span><h2>Drum Synthesis</h2><span class="new">NEW</span><span class="cnt">29 материалов</span></header>
+    <div class="body">
+
+      <section class="block">
+        <h3>Presets <span class="cnt">5</span></h3>
+        <ul class="list">
+          <li><a href="https://boosty.to/mrfrenkie/posts/4ad567a4-9a24-4141-aeb4-efcdb368a3e6">Кастрюльный снеер (Phase Plant v2.0.7)</a><span class="tag">Пресет</span><a class="src b" href="https://boosty.to/mrfrenkie/posts/4ad567a4-9a24-4141-aeb4-efcdb368a3e6"><svg><use href="#i-b"/></svg>Boosty</a></li>
+          <li><a href="https://boosty.to/mrfrenkie/posts/85e2145a-40a6-4cd0-856e-fe547eb0854d">Бас и кик для Витаали</a><span class="tag">Пресет</span><a class="src b" href="https://boosty.to/mrfrenkie/posts/85e2145a-40a6-4cd0-856e-fe547eb0854d"><svg><use href="#i-b"/></svg>Boosty</a></li>
+          <li><a href="https://boosty.to/mrfrenkie/posts/82a5b4b1-0f3f-430f-8c5c-e1927ab6b359">11 Kick пресетов для XFer Serum</a><span class="tag">Пресет</span><a class="src b" href="https://boosty.to/mrfrenkie/posts/82a5b4b1-0f3f-430f-8c5c-e1927ab6b359"><svg><use href="#i-b"/></svg>Boosty</a></li>
+          <li><a href="https://boosty.to/mrfrenkie/posts/c9a5f824-6d4c-4b72-b250-844482863d0f">Мои пресеты для Audija KickDrum</a><span class="tag">Пресет</span><a class="src b" href="https://boosty.to/mrfrenkie/posts/c9a5f824-6d4c-4b72-b250-844482863d0f"><svg><use href="#i-b"/></svg>Boosty</a></li>
+          <li><a href="https://boosty.to/mrfrenkie/posts/cb02ee6f-ea98-4cf9-91ec-e0a693622fcb">Мои личные пресеты для Kick Ninja</a><span class="tag">Пресет</span><a class="src b" href="https://boosty.to/mrfrenkie/posts/cb02ee6f-ea98-4cf9-91ec-e0a693622fcb"><svg><use href="#i-b"/></svg>Boosty</a></li>
+        </ul>
+      </section>
+
+      <section class="block cont-down">
+        <h3>Videos<span class="new">NEW</span> <span class="cnt">24</span></h3>
+
+        <div class="unit" id="u-kick">
+          <h4>Kick <span class="cnt">17</span></h4>
+          <div class="in">
+            <div class="sub"><h5>Common <em>9</em></h5>
+            <ul class="list">
+              <li><a href="https://boosty.to/mrfrenkie/posts/f351797e-5c14-4f10-bf29-b005f8b0145f">Тот самый Kick клик</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/f351797e-5c14-4f10-bf29-b005f8b0145f"><svg><use href="#i-b"/></svg>Boosty</a></li>
+              <li><a href="https://boosty.to/mrfrenkie/posts/6c9e18f3-2a7a-4696-9bbd-22c63b710e2a">Синтез Kick. Как рисовать кривую питча</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/6c9e18f3-2a7a-4696-9bbd-22c63b710e2a"><svg><use href="#i-b"/></svg>Boosty</a></li>
+              <li><a href="https://boosty.to/mrfrenkie/posts/d4255d06-3446-4bb5-9a13-88e56808e311">Быстрый и эфективный метод накрутки Kick</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/d4255d06-3446-4bb5-9a13-88e56808e311"><svg><use href="#i-b"/></svg>Boosty</a></li>
+              <li><a href="https://boosty.to/mrfrenkie/posts/776cc1b8-1c26-4ec3-93a4-8651a1a85cf9">Современная универсальная бочка</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/776cc1b8-1c26-4ec3-93a4-8651a1a85cf9"><svg><use href="#i-b"/></svg>Boosty</a></li>
+              <li><a href="https://boosty.to/mrfrenkie/posts/401f3f9c-ebd0-4d37-8596-d491b3fcd6a3">Бочечная опухоль (заметка)</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/401f3f9c-ebd0-4d37-8596-d491b3fcd6a3"><svg><use href="#i-b"/></svg>Boosty</a></li>
+              <li><a href="https://boosty.to/mrfrenkie/posts/9b1a98d3-63e1-41cf-95ba-b1f66d427c18">Я создал Кик Машину</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/9b1a98d3-63e1-41cf-95ba-b1f66d427c18"><svg><use href="#i-b"/></svg>Boosty</a></li>
+              <li><a href="https://boosty.to/mrfrenkie/posts/1c82fc35-7bf8-4dc6-87a7-a4e01404db73">Kick Ninja с восхищением</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/1c82fc35-7bf8-4dc6-87a7-a4e01404db73"><svg><use href="#i-b"/></svg>Boosty</a></li>
+              <li><a href="https://www.youtube.com/live/jyOnGBdAB1A">Audija KickDrum: лучший Kick синтезатор</a><a class="src yt" href="https://www.youtube.com/live/jyOnGBdAB1A"><svg><use href="#i-yt"/></svg>YouTube</a></li>
+              <li><a href="https://boosty.to/mrfrenkie/posts/1415bcbc-b81f-4b97-8eba-8e4c157e29e7">Не смотрите это видео, если «всё это давно есть в Splice»</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/1415bcbc-b81f-4b97-8eba-8e4c157e29e7"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            </ul></div>
+            <div class="sub"><h5>Rumble <em>4</em></h5>
+            <ul class="list">
+              <li><a href="https://boosty.to/mrfrenkie/posts/2346e2db-cbd8-484f-9f7a-5b38fe6ee7a4">Rumble Techno-House Kick + ПРЕСЕТЫ</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/2346e2db-cbd8-484f-9f7a-5b38fe6ee7a4"><svg><use href="#i-b"/></svg>Boosty</a></li>
+              <li><a href="https://boosty.to/mrfrenkie/posts/80ba206f-8eb6-4b91-b480-386196e3d35d">Ещё немного про Rumble Kick</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/80ba206f-8eb6-4b91-b480-386196e3d35d"><svg><use href="#i-b"/></svg>Boosty</a></li>
+              <li><a href="https://boosty.to/mrfrenkie/posts/615b3490-e090-4416-80af-175d900606cf">Опять Rumble Kick</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/615b3490-e090-4416-80af-175d900606cf"><svg><use href="#i-b"/></svg>Boosty</a></li>
+              <li><a href="https://boosty.to/mrfrenkie/posts/f86eec5d-3030-48f7-9442-e47776d42387">Последний туториал по рамблу, который вам понадобится</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/f86eec5d-3030-48f7-9442-e47776d42387"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            </ul></div>
+            <div class="sub"><h5>House <em>2</em></h5>
+            <ul class="list">
+              <li><a href="https://boosty.to/mrfrenkie/posts/33983cf1-2dba-4c3b-897a-84a13efb949e">House Music Kick Клик + Serum Пресет</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/33983cf1-2dba-4c3b-897a-84a13efb949e"><svg><use href="#i-b"/></svg>Boosty</a></li>
+              <li><a href="https://boosty.to/mrfrenkie/posts/54ce1bad-cd17-4dea-ab0a-ae9859b7073c">House Kick (909 Style)</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/54ce1bad-cd17-4dea-ab0a-ae9859b7073c"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            </ul></div>
+            <div class="sub"><h5>Drum and Bass <em>2</em></h5>
+            <ul class="list">
+              <li><a href="https://boosty.to/mrfrenkie/posts/f1a935f0-2b60-4aab-8a77-7f3f486cc096">Синтез Kick для Drum And Bass</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/f1a935f0-2b60-4aab-8a77-7f3f486cc096"><svg><use href="#i-b"/></svg>Boosty</a></li>
+              <li><a href="https://boosty.to/mrfrenkie/posts/bf018468-78b3-4cb4-b306-6f0818334156">Тряпки для ударки</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/bf018468-78b3-4cb4-b306-6f0818334156"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            </ul></div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </article>
+
+  <div class="foot"><span>01 · Sound Design</span><span>03</span></div>
+</section>
+
+<!-- ============ 4. ПРОДОЛЖЕНИЕ РАЗДЕЛА ============ -->
+<section class="page" style="--acc:var(--c1)">
+  <div class="tab"><i style="background:var(--c1);opacity:1"></i><i></i><i></i><i></i><i></i></div>
+
+  <article class="module cont">
+    <div class="body">
+      <section class="block cont-up">
+
+        <div class="unit" id="u-snare">
+          <h4>Snare <span class="new">NEW</span> <span class="cnt">5</span></h4>
+          <div class="in"><ul class="list">
+            <li><a href="https://boosty.to/mrfrenkie/posts/8eab4d6e-14d1-4e01-b5eb-f4ab5984d65d">Художественный фильм — Snare + файлы</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/8eab4d6e-14d1-4e01-b5eb-f4ab5984d65d"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            <li class="rel"><span class="arrow">↳</span><a href="https://www.youtube.com/watch?v=IVLtIJ5O1x8">Это же видео на YouTube</a><a class="src yt" href="https://www.youtube.com/watch?v=IVLtIJ5O1x8"><svg><use href="#i-yt"/></svg>YouTube</a></li>
+            <li><a href="https://boosty.to/mrfrenkie/posts/ba947711-c463-483f-92d9-0b96def7aba7">Пробивной и громкий snare + пресет</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/ba947711-c463-483f-92d9-0b96def7aba7"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            <li><a href="https://boosty.to/mrfrenkie/posts/836acb6a-314f-4131-8fba-f562161c4ec3">Снеер дистортион + пресет (заметка)</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/836acb6a-314f-4131-8fba-f562161c4ec3"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            <li><a href="https://boosty.to/mrfrenkie/posts/9f7942d1-3a87-4b39-8169-c6c2f40d651f">Маленькие снееры</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/9f7942d1-3a87-4b39-8169-c6c2f40d651f"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            <li><a href="https://boosty.to/mrfrenkie/posts/2657432b-716d-4284-8d41-394853690a59"><span class="new">NEW</span> Ghost Snare</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/2657432b-716d-4284-8d41-394853690a59"><svg><use href="#i-b"/></svg>Boosty</a></li>
+          </ul></div>
+        </div>
+
+        <div class="unit" id="u-cymbals">
+          <h4>Cymbals <span class="cnt">1</span></h4>
+          <div class="in"><ul class="list">
+            <li><a href="https://boosty.to/mrfrenkie/posts/6282a549-f433-4893-99b4-d0b7eeba81b4">Железо для днб. Из белого шума</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/6282a549-f433-4893-99b4-d0b7eeba81b4"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            <li class="rel"><span class="arrow">↳</span><a href="https://youtu.be/dfIJgi72JIw">Это же видео на YouTube</a><a class="src yt" href="https://youtu.be/dfIJgi72JIw"><svg><use href="#i-yt"/></svg>YouTube</a></li>
+          </ul></div>
+        </div>
+
+        <div class="unit" id="u-full-drums">
+          <h4>Full Drums <span class="new">NEW</span> <span class="cnt">1</span></h4>
+          <div class="in"><ul class="list">
+            <li><a href="https://boosty.to/mrfrenkie/posts/92ba6083-1046-4d1f-b92c-667c15cab608"><span class="new">NEW</span> Финальный босс в накрутке ударки</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/92ba6083-1046-4d1f-b92c-667c15cab608"><svg><use href="#i-b"/></svg>Boosty</a></li>
+          </ul></div>
+        </div>
+      </section>
+
+    </div>
+  </article>
+
+  <article class="module" id="m-bass-synthesis">
+    <header><span class="led"></span><h2>Bass Synthesis</h2><span class="cnt">12 материалов</span></header>
+    <div class="body">
+      <section class="block">
+        <h3>Videos <span class="cnt">12</span></h3>
+        <div class="unit" id="u-sub">
+          <h4>Sub <span class="cnt">2</span></h4>
+          <div class="in"><ul class="list">
+            <li><a href="https://boosty.to/mrfrenkie/posts/745a0149-876a-4b04-9a74-d99e71a3e377">Стрим: Почему бас - не Сабит</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/745a0149-876a-4b04-9a74-d99e71a3e377"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            <li><a href="https://boosty.to/mrfrenkie/posts/1f0feb95-c590-4201-a838-eb2fb96f8815">Суб-басс 2026 + пресет</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/1f0feb95-c590-4201-a838-eb2fb96f8815"><svg><use href="#i-b"/></svg>Boosty</a></li>
+          </ul></div>
+        </div>
+        <div class="unit" id="u-saw-bass">
+          <h4>Saw Bass <span class="cnt">2</span></h4>
+          <div class="in"><ul class="list">
+            <li><a href="https://boosty.to/mrfrenkie/posts/2a30f2e5-07fc-4d09-9c0f-932a3df842de">Фирмовый бас из пилы</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/2a30f2e5-07fc-4d09-9c0f-932a3df842de"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            <li><a href="https://boosty.to/mrfrenkie/posts/0a2a4119-3440-4b12-849d-d305cd122e8f">Субтрактивный синтез всё ещё могёт</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/0a2a4119-3440-4b12-849d-d305cd122e8f"><svg><use href="#i-b"/></svg>Boosty</a></li>
+          </ul></div>
+        </div>
+        <div class="unit" id="u-bass-series">
+          <h4>«С чего начинается Bass» <span class="tag">Серия</span> <span class="cnt">6</span></h4>
+          <div class="in"><ul class="list">
+            <li><span class="ep">1</span><a href="https://boosty.to/mrfrenkie/posts/cc34c05a-2399-4fcd-8dcd-4d18621306b8">С чего начинается Bass (часть 1)</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/cc34c05a-2399-4fcd-8dcd-4d18621306b8"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            <li><span class="ep">2</span><a href="https://boosty.to/mrfrenkie/posts/d84f2322-c371-45c3-a759-4a898c833bbb">С чего начинается Bass (часть 2)</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/d84f2322-c371-45c3-a759-4a898c833bbb"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            <li><span class="ep">3</span><a href="https://boosty.to/mrfrenkie/posts/f3a66eb6-1a19-4022-8dfe-715eca46d8c3">С чего начинается Bass (часть 3)</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/f3a66eb6-1a19-4022-8dfe-715eca46d8c3"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            <li><span class="ep">4</span><a href="https://boosty.to/mrfrenkie/posts/c2ebe666-18ac-4d26-9b62-da2fe63bdb0f">С чего начинается Bass (часть 4)</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/c2ebe666-18ac-4d26-9b62-da2fe63bdb0f"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            <li><span class="ep">4.5</span><a href="https://boosty.to/mrfrenkie/posts/9f14377e-8089-48a3-b6f8-97c3f4c37efc">С чего начинается Bass (часть 4.5) Brass/Filter FM</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/9f14377e-8089-48a3-b6f8-97c3f4c37efc"><svg><use href="#i-b"/></svg>Boosty</a></li>
+            <li><span class="ep">5</span><a href="https://boosty.to/mrfrenkie/posts/719ad41e-4c2b-4b1a-88d1-1d3766a75d54">С чего начинается Bass (ч. 5) ACID</a><a class="src b" href="https://boosty.to/mrfrenkie/posts/719ad41e-4c2b-4b1a-88d1-1d3766a75d54"><svg><use href="#i-b"/></svg>Boosty</a></li>
+          </ul></div>
+        </div>
+        <div class="unit" id="u-just-bass">
+          <h4>«Just Bass» <span class="tag">Серия</span> <span class="cnt">2</span></h4>
+          <div class="in"><ul class="list">
+            <li><span class="ep">1</span><a href="https://youtu.be/_4IymODIwBY">Just Bass #1 Tutorial</a><a class="src yt" href="https://youtu.be/_4IymODIwBY"><svg><use href="#i-yt"/></svg>YouTube</a></li>
+            <li><span class="ep">2</span><a href="https://youtu.be/P6-bTW0d46I">Just Bass #2. Serum Dubstep Growl</a><a class="src yt" href="https://youtu.be/P6-bTW0d46I"><svg><use href="#i-yt"/></svg>YouTube</a></li>
+          </ul></div>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <div class="foot"><span>01 · Sound Design</span><span>04</span></div>
+</section>
+
+</body>
+</html>
