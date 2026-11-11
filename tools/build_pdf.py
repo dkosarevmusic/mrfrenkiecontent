@@ -674,6 +674,34 @@ def print_pdf(url, out, profile):
     return json.loads(m.group(1))
 
 
+def direct_links(pdf):
+    """Edge пишет внутренние ссылки по имени метки (/Dest /s01 + таблица /Dests). Компьютерный Chrome это
+    понимает, а мобильные программы для PDF часто нет. Меняем каждую на прямую: [страница /XYZ x y 0]."""
+    from pypdf import PdfReader, PdfWriter
+    from pypdf.generic import ArrayObject, NameObject, FloatObject, NumberObject
+    rd = PdfReader(str(pdf))
+    target = {}
+    for name, d in rd.named_destinations.items():
+        target[str(name)] = (rd.get_destination_page_number(d), float(d.left or 0), float(d.top or 0))
+    w = PdfWriter(clone_from=rd)
+    for page in w.pages:
+        for a in page.get('/Annots') or []:
+            a = a.get_object()
+            d = a.get('/Dest')
+            if a.get('/Subtype') != '/Link' or d is None:
+                continue
+            d = str(d.get_object() if hasattr(d, 'get_object') else d)
+            if d not in target:
+                raise SystemExit(f'Внутренняя ссылка на несуществующую метку: {d}')
+            n, left, top = target[d]
+            a[NameObject('/Dest')] = ArrayObject([w.pages[n].indirect_reference, NameObject('/XYZ'),
+                                                  FloatObject(left), FloatObject(top), NumberObject(0)])
+    tmp = pdf.with_suffix('.tmp.pdf')
+    with open(tmp, 'wb') as f:
+        w.write(f)
+    tmp.replace(pdf)
+
+
 # ---------- проверки ----------
 
 def check(report, pdf, sections, raw_counts):
@@ -703,7 +731,7 @@ def check(report, pdf, sections, raw_counts):
     if len(rd.pages) != len(report['pages']):
         errs.append(f'страниц в PDF {len(rd.pages)}, свёрстано {len(report["pages"])}')
     uris, internal, dead = [], 0, []
-    named = rd.named_destinations
+    page_objs = [p.get_object() for p in rd.pages]
     for pg in rd.pages:
         w, h = float(pg.mediabox.width), float(pg.mediabox.height)
         if abs(w - 595.28) > 1.5 or abs(h - 841.89) > 1.5:
@@ -722,10 +750,10 @@ def check(report, pdf, sections, raw_counts):
             internal += 1
             d = a.get('/Dest') if a.get('/Dest') is not None else (act.get('/D') if act is not None else None)
             d = d.get_object() if hasattr(d, 'get_object') else d
-            if isinstance(d, str) and d not in named:
-                dead.append(d)
-            elif d is None:
-                dead.append('?')
+            if isinstance(d, str):   # ссылка по имени метки — мобильные программы её не понимают
+                dead.append(f'{d} (по имени, не прямая)')
+            elif not (isinstance(d, list) and d and d[0].get_object() in page_objs):
+                dead.append(str(d))
     want = {it['url'] for it in items} | {r['url'] for it in items for r in it['rels']}
     if set(uris) != want:
         errs.append(f'ссылки PDF ≠ трекер: лишние {sorted(set(uris) - want)[:5]}, нет {sorted(want - set(uris))[:5]}')
@@ -758,8 +786,10 @@ def main():
     if only_html:
         return 0
     url = OUT_HTML.as_uri()
-    with tempfile.TemporaryDirectory(prefix='edge-pdf-') as profile:
+    # фоновый процесс Edge иногда держит файлы профиля после выхода — не падать на уборке
+    with tempfile.TemporaryDirectory(prefix='edge-pdf-', ignore_cleanup_errors=True) as profile:
         report = print_pdf(url, OUT_PDF, profile)
+    direct_links(OUT_PDF)
     print('PDF: ', OUT_PDF.relative_to(ROOT))
     errs, st = check(report, OUT_PDF, sections, raw_link_count(text))
     print(f"Листов {st['pages']}; строк {st['rows']} (Boosty {st['boosty']}, YouTube {st['rows'] - st['boosty']}) + ↳ {st['rels']}; "
