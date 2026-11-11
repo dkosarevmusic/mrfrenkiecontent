@@ -1,0 +1,29 @@
+# Не добавлять в трекер и не предлагать (tools/find_new.py их пропускает).
+# Формат: id поста Boosty или видео YouTube, после # — пояснение. Решения Дмитрия, с датой.
+
+# Курс «Всё, чему я научился за 17 лет» — отдельная оплата; не добавляем и не спрашиваем (2026-11-11)
+6f545031-5207-4ae2-9fe4-5b06270a9454  # AAS Multiphonics CV-1 и прочие виды пластмассовых труб для водопровода
+6d587aef-83de-4357-bce7-b67bc53a79f4  # Anjunadeep на минималках
+d99fc8a6-ccf0-45a1-ad4d-152440854f5e  # Drum'n'Bass vs. Galaxy
+3816acd4-172e-4820-bd9d-4bc49d38f76c  # Dubstep
+ac9581dc-82e2-4aa3-b9ef-b667720dac81  # E-Kick
+d0a73a02-608c-4251-88d3-db2865a28f24  # Techno
+2492ed37-5901-4324-a229-2123e55355eb  # Techno House
+0afaeae8-ed7f-4e0d-b28f-ad0fc1df3cb0  # Techno vs. House
+09ebdd7a-a3c8-4c12-97cb-d550035651b8  # Trance vs. Techno
+4bb1f6fe-86a1-4bdc-a365-99c845574d37  # VCV Rack
+4e11e7c4-0e1c-452a-9a64-c9e9a612a5f4  # Vegan vs. Gridlok
+04bae575-46a2-465a-8c72-064ac2e06572  # Алярма
+869c911a-9bd1-4b68-8dca-fee9fca40f5e  # Все 22 стрима
+1cd1b6cb-2907-4be2-99ad-ea5c2504ce35  # Встаёшь утром в школу а батя картошку жарит и сигу курит на кухне
+3b24ad91-2fff-48c1-b6c1-0ef644e65081  # Надо проверить кое-что
+304defec-b03f-4ee6-8f37-ba0b557dd07e  # Пишу джангл
+34ca03ba-c460-4ca9-b143-0ae704b41375  # Пишу драм
+7a910cec-2d69-41d3-ab11-77936184f3be  # Почему дорожает колбаса?
+bbe0ba6a-f3d9-4e49-8c68-10e6b5332989  # Салат из хедкраба
+a2747e9d-1b4d-46a0-856c-c6456c4d1ef9  # Снова что-то пишу в Bitwig Studio
+019b2f61-642e-4e44-8fe5-de551a0ee6ed  # Стрй Нвй Гд
+5ddb235d-a8dd-45d1-9e18-2546de66fa77  # Утренний эмбиент
+4494c54e-42ef-49d2-876c-bd0cfe8ab83c  # Чайный гриб
+3c9d0dec-2fa5-4599-9ef2-de95990f2aa2  # Всё, чему я научился за 17 лет. Все стримы. (витрина, Boosty)
+fYOIM6cMkGg                           # Mr. Frenkie Showcase / Всё, чему я научился за 17 лет (витрина, YouTube)

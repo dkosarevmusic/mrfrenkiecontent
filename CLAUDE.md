@@ -24,7 +24,8 @@
 ## Where things are
 - `Mr. Frenkie Export.md` — старый публичный список (устарел, удаляется с первой PDF).
 - `README.md` — описание и ссылка на список.
-- `tools/find_new.py` — что нового на Boosty и YouTube и чего нет в трекере (только читает; навык `add-video`, шаг 0).
+- `tools/find_new.py` — что нового на Boosty и YouTube и чего нет в трекере (только читает; навык `add-video`, шаг 0); `tools/ignore.txt` — что решено не добавлять.
+- `tools/dates.py` → `tools/dates.json` — даты публикации всех ссылок трекера, только для порядка строк (в трекер и PDF не пишутся).
 - `design/mockup.html` — утверждаемый макет PDF (4 листа на настоящих данных); `design/fonts/` — шрифты Unbounded, Montserrat, Inter (OFL), макет берёт их локально; `design/out/` — собранные PDF и копия старого каталога (не в git).
 - Сборка PDF из HTML: headless Edge (`--print-to-pdf`, отдельный `--user-data-dir`); файл дописывается уже после выхода команды — проверяй время изменения.
 - Хранилище Obsidian, `Life Manager/MDs/`: `MrFrenkie Content.md` — исходный трекер с чекбоксами, из него собирается список; ссылка на трекер есть в `Music Sound-Design Sources.md`. Копия экспорта в хранилище удалена в `.trash` 2026-11-11.

@@ -88,6 +88,13 @@ def yt_details(vid):
     return when, t
 
 
+def ignored_ids():
+    f = pathlib.Path(__file__).with_name('ignore.txt')
+    if not f.exists():
+        return set()
+    return {ln.split('#')[0].strip() for ln in f.read_text(encoding='utf-8').splitlines() if ln.split('#')[0].strip()}
+
+
 def norm(t):
     t = re.sub(r'\[[^\]]*\]|mr\.? ?frenkie|youtube', ' ', t.lower())
     return re.sub(r'[^\w]+', ' ', t).strip()
@@ -104,7 +111,10 @@ def main():
 
     path = tracker_path(a.tracker)
     kb, ky = known_ids(path.read_text(encoding='utf-8'))
-    print(f'Трекер: {len(kb)} постов Boosty, {len(ky)} видео YouTube')
+    ign = ignored_ids()
+    kb |= ign
+    ky |= ign
+    print(f'Трекер: {len(kb - ign)} постов Boosty, {len(ky - ign)} видео YouTube; исключений (tools/ignore.txt): {len(ign)}')
 
     items = []
     posts = boosty_posts(since)
